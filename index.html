@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peshraft Technologies — Website development and hosting services. We build fast, secure digital experiences.">
+  <title>Peshraft Technologies | Web Development & Hosting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="orb orb--a" aria-hidden="true"></div>
+  <div class="orb orb--b" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="Peshraft Technologies home">
+        <span class="logo__mark">P</span>
+        <span class="logo__text">Peshraft<span class="logo__muted">.tech</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#approach">Approach</a></li>
+          <li><a class="nav__link" href="#work">Capabilities</a></li>
+          <li><a class="nav__link nav__link--cta" href="#contact">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal" data-reveal>Digital craftsmanship</p>
+          <h1 class="hero__title reveal" data-reveal>
+            Websites that <span class="gradient-text">move your business forward</span>
+          </h1>
+          <p class="hero__lede reveal" data-reveal>
+            Peshraft Technologies designs and builds high-performance sites, then keeps them fast, secure, and online with dependable hosting.
+          </p>
+          <div class="hero__actions reveal" data-reveal>
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="#services">Explore services</a>
+          </div>
+          <dl class="hero__stats reveal" data-reveal>
+            <div class="stat">
+              <dt class="stat__label">Delivery</dt>
+              <dd class="stat__value">Agile sprints</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__label">Stack</dt>
+              <dd class="stat__value">Modern &amp; lean</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__label">Hosting</dt>
+              <dd class="stat__value">Uptime focused</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero__visual reveal" data-reveal>
+          <div class="glass-card">
+            <div class="glass-card__header">
+              <span class="pulse"></span>
+              <span>Live preview</span>
+            </div>
+            <div class="glass-card__body">
+              <div class="mock-browser">
+                <div class="mock-browser__chrome">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mock-browser__viewport">
+                  <div class="mock-line mock-line--w80"></div>
+                  <div class="mock-line mock-line--w60"></div>
+                  <div class="mock-grid">
+                    <div class="mock-tile"></div>
+                    <div class="mock-tile mock-tile--accent"></div>
+                    <div class="mock-tile"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="glass-card__caption">From concept to deploy — one partner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <h2 id="services-heading" class="section__title">What we do</h2>
+          <p class="section__intro">Two focused offerings — engineered for clarity, speed, and long-term reliability.</p>
+        </header>
+        <div class="cards">
+          <article class="card reveal" data-reveal>
+            <div class="card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 6h16M4 12h10M4 18h16"/>
+                <rect x="14" y="9" width="6" height="10" rx="1"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Website development</h3>
+            <p class="card__text">Custom builds, redesigns, and performance tuning. Semantic markup, accessible UI, and code you can grow with.</p>
+            <ul class="card__list">
+              <li>Responsive layouts &amp; design systems</li>
+              <li>SEO-ready structure &amp; analytics hooks</li>
+              <li>Integrations &amp; content workflows</li>
+            </ul>
+          </article>
+          <article class="card card--featured reveal" data-reveal>
+            <div class="card__badge">Infrastructure</div>
+            <div class="card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="8" ry="3"/>
+                <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/>
+                <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Hosting &amp; care</h3>
+            <p class="card__text">Managed hosting with monitoring, SSL, backups, and updates — so your site stays fast and trustworthy.</p>
+            <ul class="card__list">
+              <li>CDN-ready delivery &amp; caching</li>
+              <li>Security hardening &amp; patching</li>
+              <li>Support when you need it</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--band" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
+        <div class="split reveal" data-reveal>
+          <div class="split__text">
+            <h2 id="approach-heading" class="section__title">Our approach</h2>
+            <p class="prose">We treat every project as a product: clear goals, tight feedback loops, and measurable outcomes. You get transparent timelines, no jargon, and a site that reflects how seriously you take your brand.</p>
+            <p class="prose">Whether you need a sharp marketing site or ongoing hosting peace of mind, we align engineering decisions with your business reality.</p>
+          </div>
+          <ol class="steps">
+            <li class="steps__item">
+              <span class="steps__num">01</span>
+              <div>
+                <strong class="steps__title">Discover</strong>
+                <p class="steps__desc">Goals, audience, and success metrics — locked early.</p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <span class="steps__num">02</span>
+              <div>
+                <strong class="steps__title">Design &amp; build</strong>
+                <p class="steps__desc">Iterative UI, performance budgets, and clean handoff.</p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <span class="steps__num">03</span>
+              <div>
+                <strong class="steps__title">Launch &amp; host</strong>
+                <p class="steps__desc">Go-live, monitoring, and continuous care.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <h2 id="work-heading" class="section__title">Built for real-world performance</h2>
+          <p class="section__intro">Principles we apply to every engagement — static or dynamic, small or scaling.</p>
+        </header>
+        <div class="pillars">
+          <div class="pillar reveal" data-reveal>
+            <span class="pillar__label">Speed</span>
+            <p class="pillar__text">Lean assets, smart caching, and layouts that feel instant on every device.</p>
+          </div>
+          <div class="pillar reveal" data-reveal>
+            <span class="pillar__label">Clarity</span>
+            <p class="pillar__text">Copy and structure that guide visitors — fewer bounces, clearer conversions.</p>
+          </div>
+          <div class="pillar reveal" data-reveal>
+            <span class="pillar__label">Trust</span>
+            <p class="pillar__text">Security-first hosting, HTTPS everywhere, and operational visibility you can rely on.</p>
+          </div>
+          <div class="pillar reveal" data-reveal>
+            <span class="pillar__label">Ownership</span>
+            <p class="pillar__text">Documented setups and sensible defaults — no black-box lock-in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact">
+        <div class="contact__intro reveal" data-reveal>
+          <h2 id="contact-heading" class="section__title">Let’s build something sharp</h2>
+          <p class="section__intro section__intro--left">Tell us about your project, timeline, and what “done” looks like. We’ll respond with next steps.</p>
+          <address class="contact__direct">
+            <a class="contact__email" href="mailto:hello@peshraft.tech">hello@peshraft.tech</a>
+            <span class="contact__note">Replace with your real address anytime.</span>
+          </address>
+        </div>
+        <form class="form reveal" data-reveal id="contact-form" novalidate>
+          <div class="form__row">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input" id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="service">Interest</label>
+            <select class="form__input form__select" id="service" name="service">
+              <option value="development">Website development</option>
+              <option value="hosting">Hosting &amp; care</option>
+              <option value="both">Both</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="message">Message</label>
+            <textarea class="form__input form__textarea" id="message" name="message" rows="4" required placeholder="Project goals, links, deadlines…"></textarea>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">Send message</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__mark logo__mark--sm">P</span>
+        <span>Peshraft Technologies</span>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Peshraft Technologies. All rights reserved.</p>
+      <a class="footer__top" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
