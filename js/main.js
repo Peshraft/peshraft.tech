@@ -64,6 +64,9 @@
   }
 
   if (form && formStatus) {
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var defaultBtnLabel = submitBtn ? submitBtn.textContent : 'Send message';
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       formStatus.textContent = '';
@@ -89,19 +92,62 @@
         return;
       }
 
-      var subject = encodeURIComponent('Project inquiry — Peshraft Technologies');
-      var body = encodeURIComponent(
-        'Name: ' +
-          nameVal +
-          '\nEmail: ' +
-          emailVal +
-          '\nInterest: ' +
-          serviceVal +
-          '\n\n' +
-          messageVal
-      );
-      window.location.href = 'mailto:hello@peshraft.tech?subject=' + subject + '&body=' + body;
-      formStatus.textContent = 'Opening your email app… If nothing opens, copy hello@peshraft.tech.';
+      var bodyText =
+        'Interest: ' +
+        serviceVal +
+        '\n\n' +
+        messageVal;
+
+      var fd = new FormData();
+      fd.append('name', nameVal);
+      fd.append('email', emailVal);
+      fd.append('message', bodyText);
+      fd.append('_subject', 'Project inquiry — Peshraft Technologies');
+      fd.append('_replyto', emailVal);
+      fd.append('_template', 'table');
+      fd.append('_captcha', 'false');
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.setAttribute('aria-busy', 'true');
+        submitBtn.textContent = 'Sending…';
+      }
+
+      fetch('https://formsubmit.co/ajax/contact@peshraft.tech', {
+        method: 'POST',
+        body: fd,
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+        .then(function (response) {
+          return response.json().then(function (data) {
+            var ok = data.success === true || data.success === 'true';
+            if (!response.ok || !ok) {
+              throw new Error((data && data.message) || 'Request failed');
+            }
+            return data;
+          });
+        })
+        .then(function () {
+          formStatus.classList.remove('is-error');
+          formStatus.textContent =
+            'Thank you — your message was sent. We will get back to you soon.';
+          form.reset();
+          formStatus.focus();
+        })
+        .catch(function () {
+          formStatus.classList.add('is-error');
+          formStatus.textContent =
+            'Could not send right now. Please try again or email contact@peshraft.tech directly.';
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.setAttribute('aria-busy', 'false');
+            submitBtn.textContent = defaultBtnLabel;
+          }
+        });
     });
   }
 })();
