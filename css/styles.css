@@ -235,6 +235,14 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
+.logo__img {
+  display: block;
+  height: 50px;
+  width: auto;
+  max-width: min(468px, 85vw);
+  object-fit: contain;
+}
+
 .logo__mark {
   display: grid;
   place-items: center;
