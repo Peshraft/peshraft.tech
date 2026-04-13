@@ -12,11 +12,10 @@
       'nav.openMenu': 'Open menu',
       'lang.label': 'Language',
       'nav.services': 'Services',
-      'nav.approach': 'Approach',
-      'nav.capabilities': 'Capabilities',
+      'nav.howWeWork': 'How we work',
+      'nav.work': 'Work',
+      'nav.pricing': 'Pricing',
       'nav.cta': 'Start a project',
-      'nav.plans': 'Plans',
-      'nav.hosting': 'Hosting',
       'hero.eyebrow': 'Digital craftsmanship',
       'hero.titleLead': 'Websites that ',
       'hero.titleAccent': 'move your business forward',
@@ -74,6 +73,35 @@
       'work.ownership': 'Ownership',
       'work.ownershipText':
         'Documented setups and sensible defaults — no black-box lock-in.',
+      'portfolio.title': 'Selected work',
+      'portfolio.intro':
+        'Recent engagements where we delivered the full stack — public sites, learning platforms, and integrations.',
+      'portfolio.ao.tag': 'Higher education · Afghanistan',
+      'portfolio.ao.client': 'Afghanistan Open University',
+      'portfolio.ao.lead':
+        'We host their public website and built a dedicated Moodle-based learning management system with student information system (SIS) alignment for enrolment, grading, and records.',
+      'portfolio.ao.li1': 'Hosted public site at afgou.org',
+      'portfolio.ao.li2': 'Moodle LMS tailored to their academic programs',
+      'portfolio.ao.li3': 'SIS-connected workflows for learners and administrators',
+      'portfolio.ao.link': 'Visit afgou.org',
+      'portfolio.ao.linkAria': 'Visit Afghanistan Open University website (opens in a new tab)',
+      'testimonials.title': 'Client feedback',
+      'testimonials.intro':
+        'Sample quotes illustrating the outcomes and partnership style we bring to client work.',
+      'testimonials.rating5': '5 out of 5 stars',
+      'testimonials.rating4': '4 out of 5 stars',
+      'testimonials.1.quote':
+        'They nailed requirements early, hit the agreed timeline, and our site has stayed fast and stable on their hosting since launch.',
+      'testimonials.1.name': 'Samira H.',
+      'testimonials.1.role': 'Program director, nonprofit sector',
+      'testimonials.2.quote':
+        'Clear communication, a tidy technical handoff, and measurable performance gains — enterprise discipline without the bloat.',
+      'testimonials.2.name': 'James C.',
+      'testimonials.2.role': 'Head of IT, professional services firm',
+      'testimonials.3.quote':
+        'From staging to go-live everything was transparent. They treat infrastructure as a product, not an afterthought.',
+      'testimonials.3.name': 'Elena V.',
+      'testimonials.3.role': 'Operations lead, education platform',
       'contact.title': 'Let’s build something sharp',
       'contact.intro':
         'Tell us about your project, timeline, and what “done” looks like. We’ll respond with next steps.',
@@ -199,11 +227,10 @@
       'nav.openMenu': 'مینو پرانیزئ',
       'lang.label': 'ژبه',
       'nav.services': 'خدمتونه',
-      'nav.approach': 'لارښود',
-      'nav.capabilities': 'وړتیاوې',
+      'nav.howWeWork': 'څنګه کار کوو',
+      'nav.work': 'کارونه',
+      'nav.pricing': 'نرخونه',
       'nav.cta': 'پروژه پیل کړئ',
-      'nav.plans': 'پلانونه',
-      'nav.hosting': 'هسټینګ',
       'pricing.business.popular': 'مشهور',
       'hero.eyebrow': 'ډیجیټل مهارت',
       'hero.titleLead': 'ویب پاڼې چې ',
@@ -262,6 +289,35 @@
       'work.ownership': 'ملکیت',
       'work.ownershipText':
         'ثبت شوي تنظیماتو او معقول ډیفالټونه — پرته له تیاره بکس تړاو څخه.',
+      'portfolio.title': 'ټاکل شوي کارونه',
+      'portfolio.intro':
+        'تازه پروژې چې موږ پکې بشپړ سټیک ورکړ — عامې پاڼې، د زده‌کړې پلیټفارمونه او یوځای کول.',
+      'portfolio.ao.tag': 'لوړې زده‌کړې · افغانستان',
+      'portfolio.ao.client': 'Afghanistan Open University',
+      'portfolio.ao.lead':
+        'موږ د دوی عامه ویب پاڼه هسټ کوو او د Moodle پر بنسټ ځانګړی LMS جوړ کړی چې د محصل معلوماتو سیسټم (SIS) سره د نوم لیکنې، نمرې او ثبتونو لپاره سمون لري.',
+      'portfolio.ao.li1': 'د afgou.org په پته عامه پاڼه هسټینګ',
+      'portfolio.ao.li2': 'د دوی اکادمیکو برنامو لپاره تنظیم شوی Moodle LMS',
+      'portfolio.ao.li3': 'د زده‌کونکو او ادمینونو لپاره د SIS سره تړلي بهیرونه',
+      'portfolio.ao.link': 'afgou.org وګورئ',
+      'portfolio.ao.linkAria': 'د Afghanistan Open University ویب پاڼه (په نوې کړکۍ کې پرانیستل کېږي)',
+      'testimonials.title': 'د پیرودونکو نظرونه',
+      'testimonials.intro':
+        'د هغه پایلو او ملګرتیا ډول نمونې چې موږ یې په پیرودونکو کارونو کې راوړو.',
+      'testimonials.rating5': 'د ۵ څخه ۵ ستوري',
+      'testimonials.rating4': 'د ۵ څخه ۴ ستوري',
+      'testimonials.1.quote':
+        'هغوی لومړی اړتیاوې روښانه کړې، په ټاکل شوي مهال کې سپارل او زموږ پاڼه له پیل راهیسې په دوی هسټینګ کې چټکه او ثابته ده.',
+      'testimonials.1.name': 'سمیره ح.',
+      'testimonials.1.role': 'د برنامې مشره، غیرانتفاعي برخه',
+      'testimonials.2.quote':
+        'روښانه اړیکه، تړلی تخنیکي تحویل او د اندازې وړ کارایی — د سوداګرۍ انضباط پرته له اضافي بار څخه.',
+      'testimonials.2.name': 'جیمز ک.',
+      'testimonials.2.role': 'د IT مشر، مسلکي خدماتو شرکت',
+      'testimonials.3.quote':
+        'له ازمایښت څخه تر پیل پورې هر څه روښان و. هغوی زیربنا د محصول په څیر ګڼي، نه د وروستي فکر په څیر.',
+      'testimonials.3.name': 'الینا و.',
+      'testimonials.3.role': 'د عملیاتو مشره، د زده‌کړې پلیټفارم',
       'contact.title': 'راځئ یو څه تیز جوړ کړو',
       'contact.intro':
         'د خپلې پروژې، مهالویش او د «بشپړېدلو» په اړه موږ ته ووایاست. موږ به راتلونکي ګامونه درته ووایو.',
@@ -387,11 +443,10 @@
       'nav.openMenu': 'باز کردن منو',
       'lang.label': 'زبان',
       'nav.services': 'خدمات',
-      'nav.approach': 'رویکرد',
-      'nav.capabilities': 'توانایی‌ها',
+      'nav.howWeWork': 'شیوه کار',
+      'nav.work': 'نمونه‌کارها',
+      'nav.pricing': 'قیمت‌ها',
       'nav.cta': 'شروع یک پروژه',
-      'nav.plans': 'پلان‌ها',
-      'nav.hosting': 'میزبانی',
       'pricing.business.popular': 'محبوب',
       'hero.eyebrow': 'مهارت دیجیتال',
       'hero.titleLead': 'وب‌سایت‌هایی که ',
@@ -450,6 +505,35 @@
       'work.ownership': 'مالکیت',
       'work.ownershipText':
         'پیکربندی مستند و پیش‌فرض‌های معقول — بدون قفل جعبه سیاه.',
+      'portfolio.title': 'کارهای منتخب',
+      'portfolio.intro':
+        'همکاری‌های اخیر با تحویل کامل — سایت‌های عمومی، سامانه‌های یادگیری و یکپارچه‌سازی.',
+      'portfolio.ao.tag': 'آموزش عالی · افغانستان',
+      'portfolio.ao.client': 'Afghanistan Open University',
+      'portfolio.ao.lead':
+        'میزبانی وب‌سایت عمومی آن‌ها را انجام می‌دهیم و یک سامانه مدیریت یادگیری اختصاصی مبتنی بر Moodle با هم‌راستایی سامانه اطلاعات دانشجو (SIS) برای نام‌نویسی، نمره‌دهی و سوابق ساخته‌ایم.',
+      'portfolio.ao.li1': 'میزبانی سایت عمومی در afgou.org',
+      'portfolio.ao.li2': 'LMS مودل متناسب با برنامه‌های آموزشی آن‌ها',
+      'portfolio.ao.li3': 'گردش کار متصل به SIS برای فراگیران و مدیران',
+      'portfolio.ao.link': 'بازدید از afgou.org',
+      'portfolio.ao.linkAria': 'وب‌سایت Afghanistan Open University (در تب جدید باز می‌شود)',
+      'testimonials.title': 'بازخورد مشتریان',
+      'testimonials.intro':
+        'نمونه جملاتی که دستاوردها و سبک همکاری ما را نشان می‌دهد.',
+      'testimonials.rating5': '۵ از ۵ ستاره',
+      'testimonials.rating4': '۴ از ۵ ستاره',
+      'testimonials.1.quote':
+        'نیازها را زود روشن کردند، به زمان توافق‌شده رسیدند و سایت ما از روز اول روی میزبانی آن‌ها سریع و پایدار مانده است.',
+      'testimonials.1.name': 'سمیرا ح.',
+      'testimonials.1.role': 'مدیر برنامه، بخش غیرانتفاعی',
+      'testimonials.2.quote':
+        'ارتباط شفاف، تحویل فنی مرتب و بهبود کارایی قابل اندازه‌گیری — انضباط سازمانی بدون حجم اضافی.',
+      'testimonials.2.name': 'جیمز ک.',
+      'testimonials.2.role': 'سرپرست فناوری اطلاعات، شرکت خدمات حرفه‌ای',
+      'testimonials.3.quote':
+        'از استیجینگ تا راه‌اندازی همه‌چیز شفاف بود. زیرساخت را مانند یک محصول جدی می‌گیرند، نه یک فکر آخر.',
+      'testimonials.3.name': 'النا و.',
+      'testimonials.3.role': 'مسئول عملیات، سامانه آموزشی',
       'contact.title': 'بیایید چیزی تیز بسازیم',
       'contact.intro':
         'درباره پروژه، زمان‌بندی و اینکه «تمام‌شدن» برای شما چگونه است بگویید. ما با گام‌های بعدی پاسخ می‌دهیم.',

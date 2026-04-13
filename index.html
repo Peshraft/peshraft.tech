@@ -35,10 +35,9 @@
         <nav class="nav" id="site-nav" aria-label="Primary">
           <ul class="nav__list">
             <li><a class="nav__link" href="#services" data-i18n="nav.services">Services</a></li>
-            <li><a class="nav__link" href="#approach" data-i18n="nav.approach">Approach</a></li>
-            <li><a class="nav__link" href="#work" data-i18n="nav.capabilities">Capabilities</a></li>
-            <li><a class="nav__link" href="#pricing" data-i18n="nav.plans">Plans</a></li>
-            <li><a class="nav__link" href="#infrastructure" data-i18n="nav.hosting">Hosting</a></li>
+            <li><a class="nav__link" href="#approach" data-i18n="nav.howWeWork">How we work</a></li>
+            <li><a class="nav__link" href="#portfolio" data-i18n="nav.work">Work</a></li>
+            <li><a class="nav__link" href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
             <li><a class="nav__link nav__link--cta" href="#contact" data-i18n="nav.cta">Start a project</a></li>
           </ul>
         </nav>
@@ -205,6 +204,92 @@
             <span class="pillar__label" data-i18n="work.ownership">Ownership</span>
             <p class="pillar__text" data-i18n="work.ownershipText">Documented setups and sensible defaults — no black-box lock-in.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--band" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <h2 id="portfolio-heading" class="section__title" data-i18n="portfolio.title">Selected work</h2>
+          <p class="section__intro" data-i18n="portfolio.intro">
+            Recent engagements where we delivered the full stack — public sites, learning platforms, and integrations.
+          </p>
+        </header>
+        <article class="portfolio-spotlight reveal" data-reveal>
+          <span class="portfolio-spotlight__badge" data-i18n="portfolio.ao.tag">Higher education · Afghanistan</span>
+          <h3 class="portfolio-spotlight__client" data-i18n="portfolio.ao.client">Afghanistan Open University</h3>
+          <p class="portfolio-spotlight__lead" data-i18n="portfolio.ao.lead">
+            We host their public website and built a dedicated Moodle-based learning management system with student information system (SIS) alignment for enrolment, grading, and records.
+          </p>
+          <ul class="portfolio-spotlight__list">
+            <li data-i18n="portfolio.ao.li1">Hosted public site at afgou.org</li>
+            <li data-i18n="portfolio.ao.li2">Moodle LMS tailored to their academic programs</li>
+            <li data-i18n="portfolio.ao.li3">SIS-connected workflows for learners and administrators</li>
+          </ul>
+          <a
+            class="btn btn--ghost portfolio-spotlight__link"
+            href="https://afgou.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="portfolio.ao.link"
+            data-i18n-aria-label="portfolio.ao.linkAria"
+          >Visit afgou.org</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <h2 id="testimonials-heading" class="section__title" data-i18n="testimonials.title">Client feedback</h2>
+          <p class="section__intro" data-i18n="testimonials.intro">
+            Sample quotes illustrating the outcomes and partnership style we bring to client work.
+          </p>
+        </header>
+        <div class="testimonials">
+          <figure class="testimonial reveal" data-reveal>
+            <blockquote class="testimonial__quote" data-i18n="testimonials.1.quote">
+              They nailed requirements early, hit the agreed timeline, and our site has stayed fast and stable on their hosting since launch.
+            </blockquote>
+            <p class="testimonial__rating" role="img" data-i18n-aria-label="testimonials.rating5" aria-label="5 out of 5 stars">
+              <span class="testimonial__star-row" aria-hidden="true">
+                <span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span>
+              </span>
+            </p>
+            <figcaption class="testimonial__cite">
+              <span class="testimonial__name" data-i18n="testimonials.1.name">Samira H.</span>
+              <span class="testimonial__role" data-i18n="testimonials.1.role">Program director, nonprofit sector</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial reveal" data-reveal>
+            <blockquote class="testimonial__quote" data-i18n="testimonials.2.quote">
+              Clear communication, a tidy technical handoff, and measurable performance gains — enterprise discipline without the bloat.
+            </blockquote>
+            <p class="testimonial__rating" role="img" data-i18n-aria-label="testimonials.rating5" aria-label="5 out of 5 stars">
+              <span class="testimonial__star-row" aria-hidden="true">
+                <span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span>
+              </span>
+            </p>
+            <figcaption class="testimonial__cite">
+              <span class="testimonial__name" data-i18n="testimonials.2.name">James C.</span>
+              <span class="testimonial__role" data-i18n="testimonials.2.role">Head of IT, professional services firm</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial reveal" data-reveal>
+            <blockquote class="testimonial__quote" data-i18n="testimonials.3.quote">
+              From staging to go-live everything was transparent. They treat infrastructure as a product, not an afterthought.
+            </blockquote>
+            <p class="testimonial__rating" role="img" data-i18n-aria-label="testimonials.rating4" aria-label="4 out of 5 stars">
+              <span class="testimonial__star-row" aria-hidden="true">
+                <span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star testimonial__star--empty"></span>
+              </span>
+            </p>
+            <figcaption class="testimonial__cite">
+              <span class="testimonial__name" data-i18n="testimonials.3.name">Elena V.</span>
+              <span class="testimonial__role" data-i18n="testimonials.3.role">Operations lead, education platform</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
