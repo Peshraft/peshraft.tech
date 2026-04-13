@@ -17,22 +17,32 @@
 
   <header class="header" id="top">
     <div class="header__inner">
-      <a class="logo" href="#top" aria-label="Peshraft Technologies home">
+      <a class="logo" href="#top" data-i18n-aria-label="logo.ariaHome" aria-label="Peshraft Technologies home">
         <span class="logo__mark">P</span>
         <span class="logo__text">Peshraft<span class="logo__muted">.tech</span></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
-      <nav class="nav" id="site-nav" aria-label="Primary">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="#services">Services</a></li>
-          <li><a class="nav__link" href="#approach">Approach</a></li>
-          <li><a class="nav__link" href="#work">Capabilities</a></li>
-          <li><a class="nav__link nav__link--cta" href="#contact">Start a project</a></li>
-        </ul>
-      </nav>
+      <div class="header__end">
+        <label class="visually-hidden" for="lang-select" data-i18n="lang.label">Language</label>
+        <select id="lang-select" class="lang-select" name="lang" data-i18n-aria-label="lang.label" aria-label="Language">
+          <option value="en">English</option>
+          <option value="ps">پښتو</option>
+          <option value="prs">دری</option>
+        </select>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria-label="nav.openMenu" aria-label="Open menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a class="nav__link" href="#approach" data-i18n="nav.approach">Approach</a></li>
+            <li><a class="nav__link" href="#work" data-i18n="nav.capabilities">Capabilities</a></li>
+            <li><a class="nav__link" href="#pricing" data-i18n="nav.plans">Plans</a></li>
+            <li><a class="nav__link" href="#infrastructure" data-i18n="nav.hosting">Hosting</a></li>
+            <li><a class="nav__link nav__link--cta" href="#contact" data-i18n="nav.cta">Start a project</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -40,29 +50,29 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow reveal" data-reveal>Digital craftsmanship</p>
+          <p class="eyebrow reveal" data-reveal data-i18n="hero.eyebrow">Digital craftsmanship</p>
           <h1 class="hero__title reveal" data-reveal>
-            Websites that <span class="gradient-text">move your business forward</span>
+            <span data-i18n="hero.titleLead">Websites that </span><span class="gradient-text" data-i18n="hero.titleAccent">move your business forward</span>
           </h1>
-          <p class="hero__lede reveal" data-reveal>
+          <p class="hero__lede reveal" data-reveal data-i18n="hero.lede">
             Peshraft Technologies designs and builds high-performance sites, then keeps them fast, secure, and online with dependable hosting.
           </p>
           <div class="hero__actions reveal" data-reveal>
-            <a class="btn btn--primary" href="#contact">Get in touch</a>
-            <a class="btn btn--ghost" href="#services">Explore services</a>
+            <a class="btn btn--primary" href="#contact" data-i18n="hero.getInTouch">Get in touch</a>
+            <a class="btn btn--ghost" href="#services" data-i18n="hero.exploreServices">Explore services</a>
           </div>
           <dl class="hero__stats reveal" data-reveal>
             <div class="stat">
-              <dt class="stat__label">Delivery</dt>
-              <dd class="stat__value">Agile sprints</dd>
+              <dt class="stat__label" data-i18n="hero.statDelivery">Delivery</dt>
+              <dd class="stat__value" data-i18n="hero.statDeliveryVal">Agile sprints</dd>
             </div>
             <div class="stat">
-              <dt class="stat__label">Stack</dt>
-              <dd class="stat__value">Modern &amp; lean</dd>
+              <dt class="stat__label" data-i18n="hero.statStack">Stack</dt>
+              <dd class="stat__value" data-i18n="hero.statStackVal">Modern &amp; lean</dd>
             </div>
             <div class="stat">
-              <dt class="stat__label">Hosting</dt>
-              <dd class="stat__value">Uptime focused</dd>
+              <dt class="stat__label" data-i18n="hero.statHosting">Hosting</dt>
+              <dd class="stat__value" data-i18n="hero.statHostingVal">Uptime focused</dd>
             </div>
           </dl>
         </div>
@@ -70,7 +80,7 @@
           <div class="glass-card">
             <div class="glass-card__header">
               <span class="pulse"></span>
-              <span>Live preview</span>
+              <span data-i18n="hero.livePreview">Live preview</span>
             </div>
             <div class="glass-card__body">
               <div class="mock-browser">
@@ -87,7 +97,7 @@
                   </div>
                 </div>
               </div>
-              <p class="glass-card__caption">From concept to deploy — one partner.</p>
+              <p class="glass-card__caption" data-i18n="hero.cardCaption">From concept to deploy — one partner.</p>
             </div>
           </div>
         </div>
@@ -97,8 +107,8 @@
     <section class="section section--tight" id="services" aria-labelledby="services-heading">
       <div class="container">
         <header class="section__header reveal" data-reveal>
-          <h2 id="services-heading" class="section__title">What we do</h2>
-          <p class="section__intro">Two focused offerings — engineered for clarity, speed, and long-term reliability.</p>
+          <h2 id="services-heading" class="section__title" data-i18n="services.title">What we do</h2>
+          <p class="section__intro" data-i18n="services.intro">Two focused offerings — engineered for clarity, speed, and long-term reliability.</p>
         </header>
         <div class="cards">
           <article class="card reveal" data-reveal>
@@ -108,16 +118,16 @@
                 <rect x="14" y="9" width="6" height="10" rx="1"/>
               </svg>
             </div>
-            <h3 class="card__title">Website development</h3>
-            <p class="card__text">Custom builds, redesigns, and performance tuning. Semantic markup, accessible UI, and code you can grow with.</p>
+            <h3 class="card__title" data-i18n="services.devTitle">Website development</h3>
+            <p class="card__text" data-i18n="services.devText">Custom builds, redesigns, and performance tuning. Semantic markup, accessible UI, and code you can grow with.</p>
             <ul class="card__list">
-              <li>Responsive layouts &amp; design systems</li>
-              <li>SEO-ready structure &amp; analytics hooks</li>
-              <li>Integrations &amp; content workflows</li>
+              <li data-i18n="services.devLi1">Responsive layouts &amp; design systems</li>
+              <li data-i18n="services.devLi2">SEO-ready structure &amp; analytics hooks</li>
+              <li data-i18n="services.devLi3">Integrations &amp; content workflows</li>
             </ul>
           </article>
           <article class="card card--featured reveal" data-reveal>
-            <div class="card__badge">Infrastructure</div>
+            <div class="card__badge" data-i18n="services.infraBadge">Infrastructure</div>
             <div class="card__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <ellipse cx="12" cy="5" rx="8" ry="3"/>
@@ -125,12 +135,12 @@
                 <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
               </svg>
             </div>
-            <h3 class="card__title">Hosting &amp; care</h3>
-            <p class="card__text">Managed hosting with monitoring, SSL, backups, and updates — so your site stays fast and trustworthy.</p>
+            <h3 class="card__title" data-i18n="services.hostTitle">Hosting &amp; care</h3>
+            <p class="card__text" data-i18n="services.hostText">Managed hosting with monitoring, SSL, backups, and updates — so your site stays fast and trustworthy.</p>
             <ul class="card__list">
-              <li>CDN-ready delivery &amp; caching</li>
-              <li>Security hardening &amp; patching</li>
-              <li>Support when you need it</li>
+              <li data-i18n="services.hostLi1">CDN-ready delivery &amp; caching</li>
+              <li data-i18n="services.hostLi2">Security hardening &amp; patching</li>
+              <li data-i18n="services.hostLi3">Support when you need it</li>
             </ul>
           </article>
         </div>
@@ -141,30 +151,30 @@
       <div class="container">
         <div class="split reveal" data-reveal>
           <div class="split__text">
-            <h2 id="approach-heading" class="section__title">Our approach</h2>
-            <p class="prose">We treat every project as a product: clear goals, tight feedback loops, and measurable outcomes. You get transparent timelines, no jargon, and a site that reflects how seriously you take your brand.</p>
-            <p class="prose">Whether you need a sharp marketing site or ongoing hosting peace of mind, we align engineering decisions with your business reality.</p>
+            <h2 id="approach-heading" class="section__title" data-i18n="approach.title">Our approach</h2>
+            <p class="prose" data-i18n="approach.p1">We treat every project as a product: clear goals, tight feedback loops, and measurable outcomes. You get transparent timelines, no jargon, and a site that reflects how seriously you take your brand.</p>
+            <p class="prose" data-i18n="approach.p2">Whether you need a sharp marketing site or ongoing hosting peace of mind, we align engineering decisions with your business reality.</p>
           </div>
           <ol class="steps">
             <li class="steps__item">
               <span class="steps__num">01</span>
               <div>
-                <strong class="steps__title">Discover</strong>
-                <p class="steps__desc">Goals, audience, and success metrics — locked early.</p>
+                <strong class="steps__title" data-i18n="approach.s1Title">Discover</strong>
+                <p class="steps__desc" data-i18n="approach.s1Desc">Goals, audience, and success metrics — locked early.</p>
               </div>
             </li>
             <li class="steps__item">
               <span class="steps__num">02</span>
               <div>
-                <strong class="steps__title">Design &amp; build</strong>
-                <p class="steps__desc">Iterative UI, performance budgets, and clean handoff.</p>
+                <strong class="steps__title" data-i18n="approach.s2Title">Design &amp; build</strong>
+                <p class="steps__desc" data-i18n="approach.s2Desc">Iterative UI, performance budgets, and clean handoff.</p>
               </div>
             </li>
             <li class="steps__item">
               <span class="steps__num">03</span>
               <div>
-                <strong class="steps__title">Launch &amp; host</strong>
-                <p class="steps__desc">Go-live, monitoring, and continuous care.</p>
+                <strong class="steps__title" data-i18n="approach.s3Title">Launch &amp; host</strong>
+                <p class="steps__desc" data-i18n="approach.s3Desc">Go-live, monitoring, and continuous care.</p>
               </div>
             </li>
           </ol>
@@ -175,26 +185,162 @@
     <section class="section" id="work" aria-labelledby="work-heading">
       <div class="container">
         <header class="section__header reveal" data-reveal>
-          <h2 id="work-heading" class="section__title">Built for real-world performance</h2>
-          <p class="section__intro">Principles we apply to every engagement — static or dynamic, small or scaling.</p>
+          <h2 id="work-heading" class="section__title" data-i18n="work.title">Built for real-world performance</h2>
+          <p class="section__intro" data-i18n="work.intro">Principles we apply to every engagement — static or dynamic, small or scaling.</p>
         </header>
         <div class="pillars">
           <div class="pillar reveal" data-reveal>
-            <span class="pillar__label">Speed</span>
-            <p class="pillar__text">Lean assets, smart caching, and layouts that feel instant on every device.</p>
+            <span class="pillar__label" data-i18n="work.speed">Speed</span>
+            <p class="pillar__text" data-i18n="work.speedText">Lean assets, smart caching, and layouts that feel instant on every device.</p>
           </div>
           <div class="pillar reveal" data-reveal>
-            <span class="pillar__label">Clarity</span>
-            <p class="pillar__text">Copy and structure that guide visitors — fewer bounces, clearer conversions.</p>
+            <span class="pillar__label" data-i18n="work.clarity">Clarity</span>
+            <p class="pillar__text" data-i18n="work.clarityText">Copy and structure that guide visitors — fewer bounces, clearer conversions.</p>
           </div>
           <div class="pillar reveal" data-reveal>
-            <span class="pillar__label">Trust</span>
-            <p class="pillar__text">Security-first hosting, HTTPS everywhere, and operational visibility you can rely on.</p>
+            <span class="pillar__label" data-i18n="work.trust">Trust</span>
+            <p class="pillar__text" data-i18n="work.trustText">Security-first hosting, HTTPS everywhere, and operational visibility you can rely on.</p>
           </div>
           <div class="pillar reveal" data-reveal>
-            <span class="pillar__label">Ownership</span>
-            <p class="pillar__text">Documented setups and sensible defaults — no black-box lock-in.</p>
+            <span class="pillar__label" data-i18n="work.ownership">Ownership</span>
+            <p class="pillar__text" data-i18n="work.ownershipText">Documented setups and sensible defaults — no black-box lock-in.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <h2 id="pricing-heading" class="section__title" data-i18n="pricing.title">Plans &amp; pricing</h2>
+          <p class="section__intro" data-i18n="pricing.intro">
+            Transparent packages for static and marketing sites. The first ten static builds are on us — you only cover the domain.
+          </p>
+        </header>
+
+        <div class="pricing-promo reveal" data-reveal>
+          <span class="pricing-promo__badge" data-i18n="pricing.promo.badge">Limited offer</span>
+          <h3 class="pricing-promo__title" data-i18n="pricing.promo.title">10 static websites — completely free</h3>
+          <p class="pricing-promo__lead" data-i18n="pricing.promo.lead">
+            We’re giving away the first 10 static sites at no charge: design, build, first year of hosting on our stack, SSL, and a contact form. You register and pay for your domain separately.
+          </p>
+          <p class="pricing-promo__spots" data-i18n="pricing.promo.spots">10 spots total · domain not included</p>
+          <ul class="pricing-promo__list">
+            <li data-i18n="pricing.promo.li1">Static site — up to 5 pages</li>
+            <li data-i18n="pricing.promo.li2">Mobile-responsive layout</li>
+            <li data-i18n="pricing.promo.li3">1 GB hosting space</li>
+            <li data-i18n="pricing.promo.li4">SSL certificate included</li>
+            <li data-i18n="pricing.promo.li5">Contact form integration</li>
+            <li data-i18n="pricing.promo.li6">2 revision rounds · 7–10 business-day delivery</li>
+            <li data-i18n="pricing.promo.li7">Domain name not included</li>
+          </ul>
+          <p class="pricing-promo__claim" data-i18n="pricing.promo.claim">Email contact@peshraft.tech with subject “Free static site” to claim a spot.</p>
+          <a class="btn btn--primary" href="#contact" data-i18n="pricing.cta">Request this plan</a>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-reveal>
+            <h3 class="price-card__name" data-i18n="pricing.starter.name">Starter</h3>
+            <p class="price-card__tag" data-i18n="pricing.starter.tag">Personal sites &amp; small businesses</p>
+            <p class="price-card__price"><span data-i18n="pricing.starter.price">$199</span></p>
+            <p class="price-card__hosting" data-i18n="pricing.starter.hosting">+ $9.99/mo hosting</p>
+            <ul class="price-card__features">
+              <li data-i18n="pricing.starter.f1">Up to 5 pages</li>
+              <li data-i18n="pricing.starter.f2">Template-based custom design</li>
+              <li data-i18n="pricing.starter.f3">Mobile responsive</li>
+              <li data-i18n="pricing.starter.f4">5 GB SSD · 50 GB/mo bandwidth</li>
+              <li data-i18n="pricing.starter.f5">1 free domain (1st year)</li>
+              <li data-i18n="pricing.starter.f6">SSL + 1 email account</li>
+              <li data-i18n="pricing.starter.f7">Email support — 48h response</li>
+              <li data-i18n="pricing.starter.f8">2 revision rounds · 7–10 day delivery</li>
+            </ul>
+            <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
+          </article>
+
+          <article class="price-card price-card--featured reveal" data-reveal>
+            <span class="price-card__ribbon" data-i18n="pricing.business.popular">Popular</span>
+            <h3 class="price-card__name" data-i18n="pricing.business.name">Business</h3>
+            <p class="price-card__tag" data-i18n="pricing.business.tag">Growing businesses &amp; service brands</p>
+            <p class="price-card__price"><span data-i18n="pricing.business.price">$499</span></p>
+            <p class="price-card__hosting" data-i18n="pricing.business.hosting">+ $20/mo hosting</p>
+            <ul class="price-card__features">
+              <li data-i18n="pricing.business.f1">Up to 15 pages</li>
+              <li data-i18n="pricing.business.f2">Custom design from scratch</li>
+              <li data-i18n="pricing.business.f3">Fully responsive · cross-browser</li>
+              <li data-i18n="pricing.business.f4">20 GB SSD · 200 GB/mo bandwidth</li>
+              <li data-i18n="pricing.business.f5">1 free domain + 1 subdomain</li>
+              <li data-i18n="pricing.business.f6">SSL + 5 email accounts</li>
+              <li data-i18n="pricing.business.f7">Basic on-page SEO setup</li>
+              <li data-i18n="pricing.business.f8">Chat &amp; email support — 24h</li>
+              <li data-i18n="pricing.business.f9">4 revision rounds</li>
+            </ul>
+            <a class="btn btn--primary btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
+          </article>
+
+          <article class="price-card reveal" data-reveal>
+            <h3 class="price-card__name" data-i18n="pricing.premium.name">Premium</h3>
+            <p class="price-card__tag" data-i18n="pricing.premium.tag">Established brands &amp; higher traffic</p>
+            <p class="price-card__price"><span data-i18n="pricing.premium.price">$999</span></p>
+            <p class="price-card__hosting" data-i18n="pricing.premium.hosting">+ $30/mo hosting</p>
+            <ul class="price-card__features">
+              <li data-i18n="pricing.premium.f1">Unlimited pages</li>
+              <li data-i18n="pricing.premium.f2">Custom UI/UX design</li>
+              <li data-i18n="pricing.premium.f3">Advanced motion &amp; interactions</li>
+              <li data-i18n="pricing.premium.f4">50 GB SSD · unlimited bandwidth*</li>
+              <li data-i18n="pricing.premium.f5">Free domain + 3 subdomains</li>
+              <li data-i18n="pricing.premium.f6">SSL + 20 email accounts</li>
+              <li data-i18n="pricing.premium.f7">Full SEO audit &amp; setup</li>
+              <li data-i18n="pricing.premium.f8">Priority support — 4h response</li>
+              <li data-i18n="pricing.premium.f9">Unlimited revisions</li>
+            </ul>
+            <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
+          </article>
+        </div>
+        <p class="pricing-footnote reveal" data-reveal data-i18n="pricing.footnote">
+          * Unlimited bandwidth on Premium is subject to fair-use policy.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--band section--infra" id="infrastructure" aria-labelledby="infra-heading">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <h2 id="infra-heading" class="section__title" data-i18n="infra.title">Hosting built for stability</h2>
+          <p class="section__intro" data-i18n="infra.intro">
+            Your site runs on infrastructure we operate in Germany — engineered for security, speed, and room to grow.
+          </p>
+        </header>
+        <div class="infra-stats reveal" data-reveal>
+          <div class="infra-stat">
+            <span class="infra-stat__label" data-i18n="infra.stat.region">Region</span>
+            <span class="infra-stat__value" data-i18n="infra.stat.regionVal">Germany (EU)</span>
+          </div>
+          <div class="infra-stat">
+            <span class="infra-stat__label" data-i18n="infra.stat.compute">Compute class</span>
+            <span class="infra-stat__value" data-i18n="infra.stat.computeVal">8 vCPU</span>
+          </div>
+          <div class="infra-stat">
+            <span class="infra-stat__label" data-i18n="infra.stat.ram">Memory</span>
+            <span class="infra-stat__value" data-i18n="infra.stat.ramVal">16 GB RAM</span>
+          </div>
+          <div class="infra-stat">
+            <span class="infra-stat__label" data-i18n="infra.stat.storage">NVMe storage</span>
+            <span class="infra-stat__value" data-i18n="infra.stat.storageVal">480 GB</span>
+          </div>
+        </div>
+        <div class="infra-copy reveal" data-reveal>
+          <p class="prose" data-i18n="infra.p1">
+            We host many lightweight static sites on a single high-spec virtual server: NVMe storage, plenty of RAM, and connectivity suited to steady traffic — so pages stay quick even as the fleet grows.
+          </p>
+          <p class="prose" data-i18n="infra.p2">
+            Every site is served over TLS. The host layer uses firewalls, access controls, and a disciplined patch cycle. Facilities follow industry-accepted security and availability practices.
+          </p>
+          <p class="prose" data-i18n="infra.p3">
+            We monitor resources and plan capacity so ~100 static properties can coexist without turning into noisy neighbors for your visitors.
+          </p>
+          <p class="prose" data-i18n="infra.p4">
+            If you outgrow a shared static slot, we can move you to a dedicated footprint — same operational standards, more isolation.
+          </p>
         </div>
       </div>
     </section>
@@ -202,8 +348,8 @@
     <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
       <div class="container contact">
         <div class="contact__intro reveal" data-reveal>
-          <h2 id="contact-heading" class="section__title">Let’s build something sharp</h2>
-          <p class="section__intro section__intro--left">Tell us about your project, timeline, and what “done” looks like. We’ll respond with next steps.</p>
+          <h2 id="contact-heading" class="section__title" data-i18n="contact.title">Let’s build something sharp</h2>
+          <p class="section__intro section__intro--left" data-i18n="contact.intro">Tell us about your project, timeline, and what “done” looks like. We’ll respond with next steps.</p>
           <address class="contact__direct">
             <a class="contact__email" href="mailto:contact@peshraft.tech">contact@peshraft.tech</a>
           </address>
@@ -216,26 +362,48 @@
           data-web3forms-access-key="ab738e7a-bc37-40e0-b7f4-7be1ba02764d"
         >
           <div class="form__row">
-            <label class="form__label" for="name">Name</label>
-            <input class="form__input" id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+            <label class="form__label" for="name" data-i18n="contact.formName">Name</label>
+            <input class="form__input" id="name" name="name" type="text" autocomplete="name" required data-i18n-placeholder="contact.phName" placeholder="Your name">
           </div>
           <div class="form__row">
-            <label class="form__label" for="email">Email</label>
-            <input class="form__input" id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+            <label class="form__label" for="email" data-i18n="contact.formEmail">Email</label>
+            <input class="form__input" id="email" name="email" type="email" autocomplete="email" required data-i18n-placeholder="contact.phEmail" placeholder="you@company.com">
           </div>
           <div class="form__row">
-            <label class="form__label" for="service">Interest</label>
+            <label class="form__label" for="phone" data-i18n="contact.formPhone">Phone</label>
+            <input class="form__input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required data-i18n-placeholder="contact.phPhone" placeholder="+1 234 567 8900">
+          </div>
+          <fieldset class="form__fieldset form__row">
+            <legend class="form__legend" id="contact-kind-legend" data-i18n="contact.formKind">Contact type</legend>
+            <div class="form__radios">
+              <label class="form__radio-label">
+                <input type="radio" name="contact_kind" value="personal" checked>
+                <span data-i18n="contact.kindPersonal">Personal</span>
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" name="contact_kind" value="organization">
+                <span data-i18n="contact.kindOrganization">Organization</span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="form__row" id="org-name-row" hidden>
+            <label class="form__label" for="org-name" data-i18n="contact.formOrgName">Organization name</label>
+            <input class="form__input" id="org-name" name="org_name" type="text" autocomplete="organization" data-i18n-placeholder="contact.phOrgName" placeholder="Company or organization name">
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="service" data-i18n="contact.formInterest">Interest</label>
             <select class="form__input form__select" id="service" name="service">
-              <option value="development">Website development</option>
-              <option value="hosting">Hosting &amp; care</option>
-              <option value="both">Both</option>
+              <option value="free-static" data-i18n="contact.optFree">Free static site (10 spots)</option>
+              <option value="development" data-i18n="contact.optDev">Website development</option>
+              <option value="hosting" data-i18n="contact.optHost">Hosting &amp; care</option>
+              <option value="both" data-i18n="contact.optBoth">Both</option>
             </select>
           </div>
           <div class="form__row">
-            <label class="form__label" for="message">Message</label>
-            <textarea class="form__input form__textarea" id="message" name="message" rows="4" required placeholder="Project goals, links, deadlines…"></textarea>
+            <label class="form__label" for="message" data-i18n="contact.formMessage">Message</label>
+            <textarea class="form__input form__textarea" id="message" name="message" rows="4" required data-i18n-placeholder="contact.phMessage" placeholder="Project goals, links, deadlines…"></textarea>
           </div>
-          <button class="btn btn--primary btn--full" type="submit">Send message</button>
+          <button class="btn btn--primary btn--full" type="submit" data-i18n="contact.submit">Send message</button>
           <p class="form__status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
         </form>
       </div>
@@ -246,13 +414,14 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <span class="logo__mark logo__mark--sm">P</span>
-        <span>Peshraft Technologies</span>
+        <span data-i18n="footer.brand">Peshraft Technologies</span>
       </div>
-      <p class="footer__copy">&copy; <span id="year"></span> Peshraft Technologies. All rights reserved.</p>
-      <a class="footer__top" href="#top">Back to top</a>
+      <p class="footer__copy">&copy; <span id="year"></span> <span data-i18n="footer.brand">Peshraft Technologies</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <a class="footer__top" href="#top" data-i18n="footer.top">Back to top</a>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

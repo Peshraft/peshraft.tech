@@ -12,6 +12,40 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+  function scrollToTopAnchor() {
+    var prefersReduced =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: prefersReduced ? 'auto' : 'smooth'
+    });
+    try {
+      if (window.history && window.history.replaceState) {
+        history.replaceState(null, '', '#top');
+      }
+    } catch (err) {
+      /* ignore */
+    }
+  }
+
+  document.querySelectorAll('a[href="#top"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      if (
+        e.defaultPrevented ||
+        e.button !== 0 ||
+        e.metaKey ||
+        e.ctrlKey ||
+        e.shiftKey ||
+        e.altKey
+      ) {
+        return;
+      }
+      e.preventDefault();
+      scrollToTopAnchor();
+    });
+  });
+
   function setNavOpen(open) {
     if (!navToggle || !nav) {
       return;
@@ -63,9 +97,51 @@
     });
   }
 
+  function t(key) {
+    if (window.peshraftI18n && typeof window.peshraftI18n.get === 'function') {
+      return window.peshraftI18n.get(key);
+    }
+    return '';
+  }
+
+  function submitBtnLabel() {
+    var label = t('contact.submit');
+    return label || 'Send message';
+  }
+
+  function sendingBtnLabel() {
+    var label = t('contact.sending');
+    return label || 'Sending…';
+  }
+
   if (form && formStatus) {
     var submitBtn = form.querySelector('button[type="submit"]');
-    var defaultBtnLabel = submitBtn ? submitBtn.textContent : 'Send message';
+
+    function updateContactKindUi() {
+      var orgRow = document.getElementById('org-name-row');
+      var orgInput = document.getElementById('org-name');
+      var kindOrg = form.querySelector('input[name="contact_kind"][value="organization"]');
+      if (!orgRow || !orgInput) {
+        return;
+      }
+      var isOrg = kindOrg && kindOrg.checked;
+      orgRow.hidden = !isOrg;
+      orgInput.required = isOrg;
+      if (!isOrg) {
+        orgInput.value = '';
+      }
+    }
+
+    form.querySelectorAll('input[name="contact_kind"]').forEach(function (radio) {
+      radio.addEventListener('change', updateContactKindUi);
+    });
+    updateContactKindUi();
+
+    document.addEventListener('peshraft:lang', function () {
+      if (submitBtn && submitBtn.getAttribute('aria-busy') !== 'true') {
+        submitBtn.textContent = submitBtnLabel();
+      }
+    });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -74,29 +150,57 @@
 
       var name = form.elements.namedItem('name');
       var email = form.elements.namedItem('email');
+      var phone = form.elements.namedItem('phone');
+      var orgNameEl = form.elements.namedItem('org_name');
       var message = form.elements.namedItem('message');
       var service = form.elements.namedItem('service');
+      var contactKindNodes = form.elements.namedItem('contact_kind');
 
-      if (!name || !email || !message) {
+      if (!name || !email || !phone || !message) {
         return;
       }
 
       var nameVal = String(name.value || '').trim();
       var emailVal = String(email.value || '').trim();
+      var phoneVal = String(phone.value || '').trim();
       var messageVal = String(message.value || '').trim();
       var serviceVal = service ? String(service.value || '') : '';
+      var contactKindVal =
+        contactKindNodes && contactKindNodes.value
+          ? String(contactKindNodes.value)
+          : 'personal';
+      var orgNameVal = orgNameEl ? String(orgNameEl.value || '').trim() : '';
 
-      if (!nameVal || !emailVal || !messageVal) {
-        formStatus.textContent = 'Please fill in name, email, and message.';
+      if (!nameVal || !emailVal || !phoneVal || !messageVal) {
+        formStatus.textContent =
+          t('form.errorRequired') || 'Please fill in name, email, phone, and message.';
         formStatus.classList.add('is-error');
         return;
       }
 
-      var bodyText =
+      if (contactKindVal === 'organization' && !orgNameVal) {
+        formStatus.textContent =
+          t('form.errorOrgName') || 'Please enter your organization name.';
+        formStatus.classList.add('is-error');
+        return;
+      }
+
+      var kindLabel =
+        contactKindVal === 'organization'
+          ? t('contact.kindOrganization') || 'Organization'
+          : t('contact.kindPersonal') || 'Personal';
+
+      var metaBlock =
         'Interest: ' +
         serviceVal +
-        '\n\n' +
-        messageVal;
+        '\nPhone: ' +
+        phoneVal +
+        '\nContact type: ' +
+        kindLabel +
+        (contactKindVal === 'organization' && orgNameVal ? '\nOrganization: ' + orgNameVal : '') +
+        '\n\n';
+
+      var bodyText = metaBlock + messageVal;
 
       var web3Key = String(form.getAttribute('data-web3forms-access-key') || '').trim();
 
@@ -107,6 +211,13 @@
           nameVal +
           '\nEmail: ' +
           emailVal +
+          '\nPhone: ' +
+          phoneVal +
+          '\nContact type: ' +
+          kindLabel +
+          (contactKindVal === 'organization' && orgNameVal
+            ? '\nOrganization: ' + orgNameVal
+            : '') +
           '\nInterest: ' +
           serviceVal +
           '\n\n' +
@@ -124,29 +235,29 @@
         formStatus.classList.remove('is-error');
         if (fallbackAfterApiFailure) {
           formStatus.textContent =
-            'The online form could not send your message (for example if the monthly limit was reached). ' +
-            'Your email app should open with the same details — send that email to reach us. ' +
-            'If nothing opens, write to contact@peshraft.tech.';
+            t('form.mailtoFallback') ||
+            'The online form could not send your message. Your email app should open — send that email to reach us.';
         } else {
           formStatus.textContent =
-            'Your email app should open with this message pre-filled. Send the email to reach us. ' +
-            'If nothing opens, email contact@peshraft.tech directly.';
+            t('form.mailtoDirect') ||
+            'Your email app should open with this message pre-filled. Send the email to reach us.';
         }
         form.reset();
+        updateContactKindUi();
         formStatus.focus();
       }
 
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.setAttribute('aria-busy', 'true');
-        submitBtn.textContent = 'Sending…';
+        submitBtn.textContent = sendingBtnLabel();
       }
 
       function finishSubmitUi() {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.setAttribute('aria-busy', 'false');
-          submitBtn.textContent = defaultBtnLabel;
+          submitBtn.textContent = submitBtnLabel();
         }
       }
 
@@ -162,6 +273,9 @@
             subject: 'Project inquiry — Peshraft Technologies',
             name: nameVal,
             email: emailVal,
+            phone: phoneVal,
+            contact_kind: contactKindVal,
+            org_name: contactKindVal === 'organization' ? orgNameVal : '',
             message: bodyText
           })
         })
@@ -185,8 +299,9 @@
           .then(function () {
             formStatus.classList.remove('is-error');
             formStatus.textContent =
-              'Thank you — your message was sent. We will get back to you soon.';
+              t('form.success') || 'Thank you — your message was sent. We will get back to you soon.';
             form.reset();
+            updateContactKindUi();
             formStatus.focus();
           })
           .catch(function () {
