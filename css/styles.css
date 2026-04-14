@@ -831,6 +831,103 @@ button:focus-visible {
   font-size: 0.9375rem;
 }
 
+/* About — founders (minimal two-column, no cards) */
+.about-team {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.5rem, 8vw, 6rem);
+  max-width: 42rem;
+  margin-inline: auto;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .about-team {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.about-team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-person__name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.about-person__role {
+  margin: 0 0 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #0891b2;
+  letter-spacing: 0.02em;
+}
+
+.about-person__photo {
+  width: min(100%, 200px);
+  aspect-ratio: 1;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bg-deep);
+  border: none;
+  display: block;
+}
+
+.about-person__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-person__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.about-person__social-link {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #94a3b8;
+  border-radius: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.about-person__social-link:hover {
+  color: #0891b2;
+}
+
+.about-person__social-link:focus-visible {
+  outline: 2px solid #0891b2;
+  outline-offset: 3px;
+}
+
+.about-person__social-icon {
+  display: block;
+}
+
 .card__list {
   margin: 0;
   padding-left: 1.15rem;
