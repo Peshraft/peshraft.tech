@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -307,12 +307,15 @@
           <span class="pricing-promo__badge" data-i18n="pricing.promo.badge">Limited offer</span>
           <h3 class="pricing-promo__title" data-i18n="pricing.promo.title">10 websites — completely free</h3>
           <p class="price-card__price-label price-card__price-label--promo" data-i18n="pricing.promo.priceLabel">Limited launch</p>
-          <p class="price-card__price"><span data-i18n="pricing.promo.price">$0</span></p>
+          <p class="price-card__price pricing-promo__price-row">
+            <span data-i18n="pricing.promo.price">$0</span>
+            <span class="pricing-promo__domain-note" data-i18n="pricing.promo.domainNote">Domain not included</span>
+          </p>
           <p class="price-card__hosting" data-i18n="pricing.promo.renewal">$9.99/mo after one year</p>
           <p class="pricing-promo__lead" data-i18n="pricing.promo.lead">
             We’re giving away the first 10 sites at no charge: design, build, first year of hosting on our stack, SSL, and a contact form. You register and pay for your domain separately.
           </p>
-          <p class="pricing-promo__spots" data-i18n="pricing.promo.spots">10 spots total · domain not included</p>
+          <p class="pricing-promo__spots" data-i18n="pricing.promo.spots">10 spots total</p>
           <ul class="pricing-promo__list">
             <li data-i18n="pricing.promo.li1">Website — up to 5 pages</li>
             <li data-i18n="pricing.promo.li2">Mobile-responsive layout</li>
@@ -321,7 +324,6 @@
             <li data-i18n="pricing.promo.li4">SSL certificate included</li>
             <li data-i18n="pricing.promo.li5">Contact form integration</li>
             <li data-i18n="pricing.promo.li6">2 revision rounds · 7–10 business-day delivery</li>
-            <li data-i18n="pricing.promo.li7">Domain name not included</li>
           </ul>
           <p class="pricing-promo__claim" data-i18n="pricing.promo.claim">Email contact@peshraft.tech with subject “Free website” to claim a spot.</p>
           <a class="btn btn--primary" href="#contact" data-i18n="pricing.cta">Request this plan</a>
@@ -335,13 +337,15 @@
             <p class="price-card__price"><span data-i18n="pricing.starter.price">$149</span></p>
             <p class="price-card__hosting" data-i18n="pricing.starter.hosting">+ $9.99/mo hosting</p>
             <ul class="price-card__features">
-              <li data-i18n="pricing.starter.f1">Up to 5 pages</li>
-              <li data-i18n="pricing.starter.f2">Template-based custom design</li>
-              <li data-i18n="pricing.starter.f3">Mobile responsive</li>
-              <li data-i18n="pricing.starter.f4">2 GB SSD · 50 MB/s bandwidth</li>
-              <li data-i18n="pricing.starter.f5">1 free domain (1st year)</li>
-              <li data-i18n="pricing.starter.f6">Email support — 48h response</li>
-              <li data-i18n="pricing.starter.f7">2 revision rounds · 7–10 day delivery</li>
+              <li data-i18n="pricing.starter.f1">Website — up to 5 pages</li>
+              <li data-i18n="pricing.starter.f2">Mobile-responsive layout</li>
+              <li data-i18n="pricing.starter.f3">Contact form integration</li>
+              <li data-i18n="pricing.starter.f4">Template-based custom design</li>
+              <li data-i18n="pricing.starter.f5">2 GB SSD · 50 MB/s bandwidth</li>
+              <li data-i18n="pricing.starter.f6">SSL certificate included</li>
+              <li data-i18n="pricing.starter.f7">1 free domain (1st year)</li>
+              <li data-i18n="pricing.starter.f8">Email support — 48h response</li>
+              <li data-i18n="pricing.starter.f9">2 revision rounds · 7–10 day delivery</li>
             </ul>
             <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
           </article>
@@ -354,40 +358,41 @@
             <p class="price-card__price"><span data-i18n="pricing.business.price">$399</span></p>
             <p class="price-card__hosting" data-i18n="pricing.business.hosting">+ $19.99/mo hosting</p>
             <ul class="price-card__features">
-              <li data-i18n="pricing.business.f1">Up to 15 pages</li>
-              <li data-i18n="pricing.business.f2">Custom design from scratch</li>
-              <li data-i18n="pricing.business.f3">Fully responsive · cross-browser</li>
-              <li data-i18n="pricing.business.f4">5 GB SSD · 100 MB/s bandwidth</li>
-              <li data-i18n="pricing.business.f5">1 free domain + 1 subdomain</li>
-              <li data-i18n="pricing.business.f6">Basic on-page SEO setup</li>
-              <li data-i18n="pricing.business.f7">Chat &amp; email support — 24h</li>
-              <li data-i18n="pricing.business.f8">4 revision rounds</li>
+              <li data-i18n="pricing.business.f1">Website — up to 15 pages</li>
+              <li data-i18n="pricing.business.f2">Mobile-responsive layout</li>
+              <li data-i18n="pricing.business.f3">Contact form integration</li>
+              <li data-i18n="pricing.business.f4">Template-based custom design</li>
+              <li data-i18n="pricing.business.f5">Custom design from scratch</li>
+              <li data-i18n="pricing.business.f6">Fully responsive · cross-browser</li>
+              <li data-i18n="pricing.business.f7">5 GB SSD · 100 MB/s bandwidth</li>
+              <li data-i18n="pricing.business.f8">SSL certificate included</li>
+              <li data-i18n="pricing.business.f9">1 free domain + 1 subdomain</li>
+              <li data-i18n="pricing.business.f10">Basic on-page SEO setup</li>
+              <li data-i18n="pricing.business.f11">Chat &amp; email support — 24h</li>
+              <li data-i18n="pricing.business.f12">4 revision rounds</li>
             </ul>
             <a class="btn btn--primary btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
           </article>
 
-          <article class="price-card reveal" data-reveal>
-            <h3 class="price-card__name" data-i18n="pricing.premium.name">Premium</h3>
-            <p class="price-card__tag" data-i18n="pricing.premium.tag">Established brands &amp; higher traffic</p>
-            <p class="price-card__price-label" data-i18n="pricing.oneTime">One-time build</p>
-            <p class="price-card__price"><span data-i18n="pricing.premium.price">$899</span></p>
-            <p class="price-card__hosting" data-i18n="pricing.premium.hosting">+ $29.99/mo hosting</p>
+          <article class="price-card price-card--enterprise reveal" data-reveal>
+            <h3 class="price-card__name" data-i18n="pricing.enterprise.name">Enterprise</h3>
+            <p class="price-card__tag" data-i18n="pricing.enterprise.tag">Large programmes, regulated teams, and complex roadmaps</p>
+            <p class="price-card__price-label" data-i18n="pricing.enterprise.priceLabel">Custom engagement</p>
+            <p class="price-card__price price-card__price--inquiry"><span data-i18n="pricing.enterprise.price">Upon request</span></p>
+            <p class="price-card__hosting" data-i18n="pricing.enterprise.hosting">Build, hosting, SLAs &amp; support tailored to your needs</p>
             <ul class="price-card__features">
-              <li data-i18n="pricing.premium.f1">Unlimited pages</li>
-              <li data-i18n="pricing.premium.f2">Custom UI/UX design</li>
-              <li data-i18n="pricing.premium.f3">Advanced motion &amp; interactions</li>
-              <li data-i18n="pricing.premium.f4">20 GB SSD · unlimited bandwidth speed*</li>
-              <li data-i18n="pricing.premium.f5">Free domain + 3 subdomains</li>
-              <li data-i18n="pricing.premium.f6">Full SEO audit &amp; setup</li>
-              <li data-i18n="pricing.premium.f7">Priority support — 4h response</li>
-              <li data-i18n="pricing.premium.f8">Unlimited revisions</li>
+              <li data-i18n="pricing.enterprise.f1">Business-grade baseline — extended to your roadmap</li>
+              <li data-i18n="pricing.enterprise.f2">Multi-site, multi-brand, or phased rollouts</li>
+              <li data-i18n="pricing.enterprise.f3">Custom integrations, APIs, and data workflows</li>
+              <li data-i18n="pricing.enterprise.f4">Dedicated or isolated infrastructure options</li>
+              <li data-i18n="pricing.enterprise.f5">Security hardening, monitoring &amp; backups (as agreed)</li>
+              <li data-i18n="pricing.enterprise.f6">Named contacts &amp; clear escalation paths</li>
+              <li data-i18n="pricing.enterprise.f7">SLA windows &amp; uptime targets — upon request</li>
+              <li data-i18n="pricing.enterprise.f8">Compliance-aware delivery aligned to your requirements</li>
             </ul>
-            <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
+            <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.enterprise.cta">Request a proposal</a>
           </article>
         </div>
-        <p class="pricing-footnote reveal" data-reveal data-i18n="pricing.footnote">
-          * Unlimited bandwidth speed on Premium is subject to fair-use policy.
-        </p>
       </div>
     </section>
 
@@ -503,6 +508,7 @@
               <option value="development" data-i18n="contact.optDev">Website development</option>
               <option value="hosting" data-i18n="contact.optHost">Hosting &amp; care</option>
               <option value="both" data-i18n="contact.optBoth">Both</option>
+              <option value="enterprise" data-i18n="contact.optEnterprise">Enterprise</option>
             </select>
           </div>
           <div class="form__row">
