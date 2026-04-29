@@ -5,9 +5,12 @@
 
   var STRINGS = {
     en: {
-      'meta.title': 'Peshraft Technologies | Web Development & Hosting',
+      'meta.title': 'Web Development in Afghanistan | Peshraft Technologies',
       'meta.description':
-        'Peshraft Technologies — Website development and hosting services. We build fast, secure digital experiences.',
+        'Peshraft Technologies provides web design, portfolio websites, LMS, SIS, and custom business systems in Kabul and across Afghanistan.',
+      'meta.keywords':
+        'web development Afghanistan, website design Kabul, portfolio website Afghanistan, custom website development Kabul, business website Afghanistan, LMS development Afghanistan, Moodle setup Afghanistan, student information system Afghanistan, ERP system Afghanistan, CRM system Kabul, software development Afghanistan, responsive web design Afghanistan, SEO services Kabul, website maintenance Afghanistan, e-commerce website Afghanistan, Herat web design, Kandahar web development, Mazar-e-Sharif website design, Jalalabad web services, Kunduz website development, Bamyan web design, Ghazni web development, Khost web development, Lashkar Gah web design',
+      'meta.ogLocale': 'en_US',
       'logo.ariaHome': 'Peshraft Technologies home',
       'nav.openMenu': 'Open menu',
       'lang.label': 'Language',
@@ -238,9 +241,12 @@
       'infra.p4': ''
     },
     ps: {
-      'meta.title': 'پشرفت ټکنالوژي | د ویب پراختیا او هسټینګ',
+      'meta.title': 'په افغانستان کې ویب پراختیا | پشرفت ټکنالوژي',
       'meta.description':
-        'پشرفت ټکنالوژي — د ویب پاڼو جوړول، هسټینګ او پلانونه. لومړی ۱۰ ثابت پاڼې وړیا؛ چټک او خوندي ډیجیټل تجربه.',
+        'پشرفت ټکنالوژي په کابل او ټول افغانستان کې د ویب ډیزاین، پورټفولیو پاڼو، LMS، SIS او اداري سیستمونو خدمتونه وړاندې کوي.',
+      'meta.keywords':
+        'د ویب پاڼې جوړول افغانستان, په کابل کې د ویب ډیزاین خدمتونه, د ویب پراختیا شرکت افغانستان, د سوداګرۍ ویب پاڼه جوړول, د پورټفولیو ویب پاڼه جوړول, د ای کامرس ویب پاڼه جوړول افغانستان, د ښوونځي ویب سیستم جوړول, د پوهنتون LMS جوړول افغانستان, د Moodle سیستم جوړول, د محصلینو معلوماتي سیستم جوړول, د ادارې مدیریت سیستم جوړول, د CRM سیستم جوړول کابل, د ERP سیستم جوړول افغانستان, د SEO خدمتونه کابل, د ویب پاڼې ساتنه افغانستان, ارزانه ویب پراختیا کابل, مسلکي ویب ډیزاین افغانستان, هرات ویب ډیزاین, کندهار ویب پراختیا, مزار شریف ویب ډیزاین, جلال اباد ویب خدمتونه, کندز ویب پراختیا, بامیان ویب ډیزاین, غزني ویب پراختیا, خوست ویب پراختیا, لشکرګاه ویب ډیزاین',
+      'meta.ogLocale': 'ps_AF',
       'logo.ariaHome': 'پشرفت ټکنالوژي کورپاڼه',
       'nav.openMenu': 'مینو پرانیزئ',
       'lang.label': 'ژبه',
@@ -472,9 +478,12 @@
       'infra.p4': ''
     },
     prs: {
-      'meta.title': 'پشرفت تکنالوژی | توسعه وب و میزبانی',
+      'meta.title': 'توسعه وب در افغانستان | پشرفت تکنالوژی',
       'meta.description':
-        'پشرفت تکنالوژی — توسعه، میزبانی و پلان‌های وب. ده سایت استاتیک نخست رایگان؛ تجربه دیجیتال سریع و امن.',
+        'پشرفت تکنالوژی در کابل و سراسر افغانستان خدمات طراحی سایت، وب‌سایت پورتفولیو، LMS، SIS و سیستم‌های مدیریتی ارائه می‌کند.',
+      'meta.keywords':
+        'طراحی وب‌سایت در افغانستان, توسعه وب در کابل, شرکت طراحی سایت افغانستان, ساخت وب‌سایت شرکتی در کابل, ساخت سایت پورتفولیو افغانستان, طراحی سایت فروشگاهی افغانستان, توسعه سیستم مدیریتی افغانستان, ساخت سیستم CRM در کابل, توسعه سیستم ERP افغانستان, راه‌اندازی LMS در افغانستان, پیاده‌سازی Moodle افغانستان, سیستم معلومات محصلین افغانستان, طراحی سایت دانشگاهی افغانستان, خدمات سئو در کابل, پشتیبانی و نگهداری سایت افغانستان, طراحی سایت واکنش‌گرا افغانستان, توسعه نرم‌افزار تحت وب افغانستان, هرات طراحی سایت, قندهار توسعه وب, مزار شریف طراحی سایت, جلال‌آباد خدمات وب, کندز توسعه وب, بامیان طراحی سایت, غزنی توسعه وب, خوست توسعه وب, لشکرگاه طراحی سایت',
+      'meta.ogLocale': 'fa_AF',
       'logo.ariaHome': 'صفحه اصلی پشرفت تکنالوژی',
       'nav.openMenu': 'باز کردن منو',
       'lang.label': 'زبان',
@@ -732,11 +741,40 @@
   }
 
   function applyMeta() {
-    var meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute('content', get('meta.description'));
+    var title = get('meta.title');
+    var description = get('meta.description');
+    var keywords = get('meta.keywords');
+    var ogLocale = get('meta.ogLocale');
+    var metaDescription = document.querySelector('meta[name="description"]');
+    var metaKeywords = document.querySelector('meta[name="keywords"]');
+    var ogTitle = document.querySelector('meta[property="og:title"]');
+    var ogDescription = document.querySelector('meta[property="og:description"]');
+    var ogLocaleMeta = document.querySelector('meta[property="og:locale"]');
+    var twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    var twitterDescription = document.querySelector('meta[name="twitter:description"]');
+
+    if (metaDescription) {
+      metaDescription.setAttribute('content', description);
     }
-    document.title = get('meta.title');
+    if (metaKeywords && keywords) {
+      metaKeywords.setAttribute('content', keywords);
+    }
+    if (ogTitle) {
+      ogTitle.setAttribute('content', title);
+    }
+    if (ogDescription) {
+      ogDescription.setAttribute('content', description);
+    }
+    if (ogLocaleMeta && ogLocale) {
+      ogLocaleMeta.setAttribute('content', ogLocale);
+    }
+    if (twitterTitle) {
+      twitterTitle.setAttribute('content', title);
+    }
+    if (twitterDescription) {
+      twitterDescription.setAttribute('content', description);
+    }
+    document.title = title;
   }
 
   function apply() {
