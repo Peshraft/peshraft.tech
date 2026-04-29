@@ -16,18 +16,20 @@
   <div class="orb orb--a" aria-hidden="true"></div>
   <div class="orb orb--b" aria-hidden="true"></div>
 
-  <header class="header" id="top">
+  <header class="header" id="top" dir="ltr">
     <div class="header__inner">
       <a class="logo" href="#top" data-i18n-aria-label="logo.ariaHome" aria-label="Peshraft Technologies home">
         <img class="logo__img" src="logo.png" alt="" width="334" height="72" decoding="async" fetchpriority="high">
       </a>
-      <div class="header__end">
+      <div class="header__lang">
         <label class="visually-hidden" for="lang-select" data-i18n="lang.label">Language</label>
         <select id="lang-select" class="lang-select" name="lang" data-i18n-aria-label="lang.label" aria-label="Language">
           <option value="en">English</option>
           <option value="ps">پښتو</option>
           <option value="prs">دری</option>
         </select>
+      </div>
+      <div class="header__nav-wrap">
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria-label="nav.openMenu" aria-label="Open menu">
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
@@ -320,8 +322,6 @@
           <ul class="pricing-promo__list">
             <li data-i18n="pricing.promo.li1">Website — up to 5 pages</li>
             <li data-i18n="pricing.promo.li2">Mobile-responsive layout</li>
-            <li data-i18n="pricing.promo.li3">1 GB storage</li>
-            <li data-i18n="pricing.promo.li8">Bandwidth speed: 50 MB/s</li>
             <li data-i18n="pricing.promo.li4">SSL certificate included</li>
             <li data-i18n="pricing.promo.li5">Contact form integration</li>
             <li data-i18n="pricing.promo.li6">2 revision rounds · 7–10 business-day delivery</li>
@@ -335,14 +335,12 @@
             <h3 class="price-card__name" data-i18n="pricing.starter.name">Starter</h3>
             <p class="price-card__tag" data-i18n="pricing.starter.tag">Personal sites &amp; small businesses</p>
             <p class="price-card__price-label" data-i18n="pricing.oneTime">One-time build</p>
-            <p class="price-card__price"><span data-i18n="pricing.starter.price">$149</span></p>
-            <p class="price-card__hosting" data-i18n="pricing.starter.hosting">+ $9.99/mo hosting</p>
+            <p class="price-card__price"><span data-i18n="pricing.starter.price">from $99</span></p>
+            <p class="price-card__hosting" data-i18n="pricing.starter.hosting">Hosting/month — from $4.99</p>
             <ul class="price-card__features">
-              <li data-i18n="pricing.starter.f1">Website — up to 5 pages</li>
               <li data-i18n="pricing.starter.f2">Mobile-responsive layout</li>
               <li data-i18n="pricing.starter.f3">Contact form integration</li>
               <li data-i18n="pricing.starter.f4">Template-based custom design</li>
-              <li data-i18n="pricing.starter.f5">2 GB SSD · 50 MB/s bandwidth</li>
               <li data-i18n="pricing.starter.f6">SSL certificate included</li>
               <li data-i18n="pricing.starter.f7">1 free domain (1st year)</li>
               <li data-i18n="pricing.starter.f8">Email support — 48h response</li>
@@ -356,16 +354,14 @@
             <h3 class="price-card__name" data-i18n="pricing.business.name">Business</h3>
             <p class="price-card__tag" data-i18n="pricing.business.tag">Growing businesses &amp; service brands</p>
             <p class="price-card__price-label" data-i18n="pricing.oneTime">One-time build</p>
-            <p class="price-card__price"><span data-i18n="pricing.business.price">$399</span></p>
-            <p class="price-card__hosting" data-i18n="pricing.business.hosting">+ $19.99/mo hosting</p>
+            <p class="price-card__price"><span data-i18n="pricing.business.price">from $299</span></p>
+            <p class="price-card__hosting" data-i18n="pricing.business.hosting">from $9.99/mo hosting</p>
             <ul class="price-card__features">
-              <li data-i18n="pricing.business.f1">Website — up to 15 pages</li>
+              <li data-i18n="pricing.business.f1">With a database.</li>
               <li data-i18n="pricing.business.f2">Mobile-responsive layout</li>
               <li data-i18n="pricing.business.f3">Contact form integration</li>
-              <li data-i18n="pricing.business.f4">Template-based custom design</li>
               <li data-i18n="pricing.business.f5">Custom design from scratch</li>
               <li data-i18n="pricing.business.f6">Fully responsive · cross-browser</li>
-              <li data-i18n="pricing.business.f7">5 GB SSD · 100 MB/s bandwidth</li>
               <li data-i18n="pricing.business.f8">SSL certificate included</li>
               <li data-i18n="pricing.business.f9">1 free domain + 1 subdomain</li>
               <li data-i18n="pricing.business.f10">Basic on-page SEO setup</li>
@@ -385,57 +381,11 @@
               <li data-i18n="pricing.enterprise.f1">Business-grade baseline — extended to your roadmap</li>
               <li data-i18n="pricing.enterprise.f2">Multi-site, multi-brand, or phased rollouts</li>
               <li data-i18n="pricing.enterprise.f3">Custom integrations, APIs, and data workflows</li>
-              <li data-i18n="pricing.enterprise.f4">Dedicated or isolated infrastructure options</li>
-              <li data-i18n="pricing.enterprise.f5">Security hardening, monitoring &amp; backups (as agreed)</li>
               <li data-i18n="pricing.enterprise.f6">Named contacts &amp; clear escalation paths</li>
-              <li data-i18n="pricing.enterprise.f7">SLA windows &amp; uptime targets — upon request</li>
               <li data-i18n="pricing.enterprise.f8">Compliance-aware delivery aligned to your requirements</li>
             </ul>
             <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.enterprise.cta">Request a proposal</a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--band section--infra" id="infrastructure" aria-labelledby="infra-heading">
-      <div class="container">
-        <header class="section__header reveal" data-reveal>
-          <h2 id="infra-heading" class="section__title" data-i18n="infra.title">Hosting built for stability</h2>
-          <p class="section__intro" data-i18n="infra.intro">
-            Your site runs on infrastructure we operate in Germany — engineered for security, speed, and room to grow.
-          </p>
-        </header>
-        <div class="infra-stats reveal" data-reveal>
-          <div class="infra-stat">
-            <span class="infra-stat__label" data-i18n="infra.stat.region">Region</span>
-            <span class="infra-stat__value" data-i18n="infra.stat.regionVal">Germany (EU)</span>
-          </div>
-          <div class="infra-stat">
-            <span class="infra-stat__label" data-i18n="infra.stat.compute">Compute class</span>
-            <span class="infra-stat__value" data-i18n="infra.stat.computeVal">8 vCPU</span>
-          </div>
-          <div class="infra-stat">
-            <span class="infra-stat__label" data-i18n="infra.stat.ram">Memory</span>
-            <span class="infra-stat__value" data-i18n="infra.stat.ramVal">16 GB RAM</span>
-          </div>
-          <div class="infra-stat">
-            <span class="infra-stat__label" data-i18n="infra.stat.storage">NVMe storage</span>
-            <span class="infra-stat__value" data-i18n="infra.stat.storageVal">480 GB</span>
-          </div>
-        </div>
-        <div class="infra-copy reveal" data-reveal>
-          <p class="prose" data-i18n="infra.p1">
-            We host many lightweight static sites on a single high-spec virtual server: NVMe storage, plenty of RAM, and connectivity suited to steady traffic — so pages stay quick even as the fleet grows.
-          </p>
-          <p class="prose" data-i18n="infra.p2">
-            Every site is served over TLS. The host layer uses firewalls, access controls, and a disciplined patch cycle. Facilities follow industry-accepted security and availability practices.
-          </p>
-          <p class="prose" data-i18n="infra.p3">
-            We monitor resources and plan capacity so ~100 static properties can coexist without turning into noisy neighbors for your visitors.
-          </p>
-          <p class="prose" data-i18n="infra.p4">
-            If you outgrow a shared static slot, we can move you to a dedicated footprint — same operational standards, more isolation.
-          </p>
         </div>
       </div>
     </section>
@@ -582,13 +532,13 @@
                 <span class="contact__detail-label" data-i18n="contact.detailAddress">Address</span>
                 <div class="contact__detail-lines">
                   <p data-i18n="contact.addrLine1">Peshraft Technologies</p>
-                  <p data-i18n="contact.addrLine2">Friedrichstraße 123</p>
-                  <p data-i18n="contact.addrLine3">10117 Berlin, Germany</p>
+                  <p data-i18n="contact.addrLine2">Darulaman Rd</p>
+                  <p data-i18n="contact.addrLine3">Kabul 100708, Afghanistan</p>
                 </div>
               </div>
               <div class="contact__detail">
                 <span class="contact__detail-label" data-i18n="contact.detailPhone">Phone</span>
-                <a class="contact__link" href="tel:+493012345678" data-i18n="contact.phoneDisplay">+49 30 123 45678</a>
+                <a class="contact__link" href="tel:+93700012400" data-i18n="contact.phoneDisplay">+93 70 001 2400</a>
               </div>
               <div class="contact__detail">
                 <span class="contact__detail-label" data-i18n="contact.detailEmail">Email</span>
@@ -614,7 +564,7 @@
           </div>
           <div class="form__row">
             <label class="form__label" for="phone" data-i18n="contact.formPhone">Phone</label>
-            <input class="form__input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required data-i18n-placeholder="contact.phPhone" placeholder="+1 234 567 8900">
+            <input class="form__input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required data-i18n-placeholder="contact.phPhone" placeholder="+93 70 001 2400">
           </div>
           <fieldset class="form__fieldset form__row">
             <legend class="form__legend" id="contact-kind-legend" data-i18n="contact.formKind">Contact type</legend>
