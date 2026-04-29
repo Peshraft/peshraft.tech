@@ -204,6 +204,26 @@
 
       var web3Key = String(form.getAttribute('data-web3forms-access-key') || '').trim();
 
+      if (web3Key.length >= 32 && form.querySelector('.h-captcha[data-captcha="true"]')) {
+        var hcaptchaTa = form.querySelector('textarea[name="h-captcha-response"]');
+        if (!hcaptchaTa) {
+          formStatus.textContent =
+            t('form.errorCaptchaLoading') ||
+            'Please wait for the security check to load, then try again.';
+          formStatus.classList.add('is-error');
+          formStatus.focus();
+          return;
+        }
+        var hcaptchaVal = String(hcaptchaTa.value || '').trim();
+        if (!hcaptchaVal) {
+          formStatus.textContent =
+            t('form.errorCaptcha') || 'Please complete the verification below.';
+          formStatus.classList.add('is-error');
+          formStatus.focus();
+          return;
+        }
+      }
+
       function submitViaMailto(fallbackAfterApiFailure) {
         var mailSubject = 'Project inquiry — Peshraft Technologies';
         var mailBody =
@@ -262,22 +282,33 @@
       }
 
       if (web3Key.length >= 32) {
+        var hcaptchaToken = '';
+        var hcaptchaTaSubmit = form.querySelector('textarea[name="h-captcha-response"]');
+        if (hcaptchaTaSubmit) {
+          hcaptchaToken = String(hcaptchaTaSubmit.value || '').trim();
+        }
+
+        var payload = {
+          access_key: web3Key,
+          subject: 'Project inquiry — Peshraft Technologies',
+          name: nameVal,
+          email: emailVal,
+          phone: phoneVal,
+          contact_kind: contactKindVal,
+          org_name: contactKindVal === 'organization' ? orgNameVal : '',
+          message: bodyText
+        };
+        if (hcaptchaToken) {
+          payload['h-captcha-response'] = hcaptchaToken;
+        }
+
         fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             Accept: 'application/json'
           },
-          body: JSON.stringify({
-            access_key: web3Key,
-            subject: 'Project inquiry — Peshraft Technologies',
-            name: nameVal,
-            email: emailVal,
-            phone: phoneVal,
-            contact_kind: contactKindVal,
-            org_name: contactKindVal === 'organization' ? orgNameVal : '',
-            message: bodyText
-          })
+          body: JSON.stringify(payload)
         })
           .then(function (response) {
             return response.text().then(function (text) {
@@ -302,6 +333,13 @@
               t('form.success') || 'Thank you — your message was sent. We will get back to you soon.';
             form.reset();
             updateContactKindUi();
+            try {
+              if (window.hcaptcha && typeof window.hcaptcha.reset === 'function') {
+                window.hcaptcha.reset();
+              }
+            } catch (resetErr) {
+              /* ignore */
+            }
             formStatus.focus();
           })
           .catch(function () {

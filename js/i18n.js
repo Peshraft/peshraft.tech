@@ -152,6 +152,8 @@
       'footer.top': 'Back to top',
       'form.errorRequired': 'Please fill in name, email, phone, and message.',
       'form.errorOrgName': 'Please enter your organization name.',
+      'form.errorCaptcha': 'Please complete the verification below.',
+      'form.errorCaptchaLoading': 'Please wait for the security check to load, then try again.',
       'form.success': 'Thank you — your message was sent. We will get back to you soon.',
       'form.mailtoFallback':
         'The online form could not send your message (for example if the monthly limit was reached). Your email app should open with the same details — send that email to reach us. If nothing opens, write to contact@peshraft.tech.',
@@ -384,6 +386,8 @@
       'footer.top': 'بیرته پورته',
       'form.errorRequired': 'مهرباني وکړئ نوم، بریښنالیک، تلیفون او پیغام ډک کړئ.',
       'form.errorOrgName': 'مهرباني وکړئ د موسسې یا شرکت نوم ولیکئ.',
+      'form.errorCaptcha': 'مهرباني وکړئ لاندې تایید بشپړ کړئ.',
+      'form.errorCaptchaLoading': 'مهرباني وکړئ د امنیتي چک بارولو ته انتظار وکړئ، بیا هڅه وکړئ.',
       'form.success': 'مننه — ستاسو پیغام واستول شو. موږ به ژر اړیکه ونیسو.',
       'form.mailtoFallback':
         'آنلاین فورمه ستاسو پیغام ونه لېږلی شو (د میاشتې حد ډک شوی وي). ستاسو بریښنالیک باید ورته پرانیستل شي — هغه بریښنالیک ولېږئ. که نه پرانیستل کیږي، contact@peshraft.tech ولیکئ.',
@@ -616,6 +620,8 @@
       'footer.top': 'بازگشت به بالا',
       'form.errorRequired': 'لطفاً نام، ایمیل، تلفن و پیام را پر کنید.',
       'form.errorOrgName': 'لطفاً نام سازمان را وارد کنید.',
+      'form.errorCaptcha': 'لطفاً تأیید امنیتی زیر را تکمیل کنید.',
+      'form.errorCaptchaLoading': 'لطفاً تا بارگذاری بررسی امنیتی صبر کنید و دوباره تلاش کنید.',
       'form.success': 'متشکریم — پیام شما ارسال شد. به زودی پاسخ می‌دهیم.',
       'form.mailtoFallback':
         'فرم آنلاین نتوانست پیام را بفرستد (مثلاً اگر سقف ماهانه پر شده باشد). برنامه ایمیل باید با همان جزئیات باز شود — آن را بفرستید. اگر باز نشد، به contact@peshraft.tech بنویسید.',

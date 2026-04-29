@@ -1534,6 +1534,15 @@ button:focus-visible {
   margin-bottom: 1.25rem;
 }
 
+.form__captcha {
+  margin-bottom: 1.25rem;
+}
+
+.form__captcha .h-captcha {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .form__label {
   display: block;
   font-size: 0.8125rem;

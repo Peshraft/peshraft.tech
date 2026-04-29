@@ -597,6 +597,9 @@
             <label class="form__label" for="message" data-i18n="contact.formMessage">Message</label>
             <textarea class="form__input form__textarea" id="message" name="message" rows="4" required data-i18n-placeholder="contact.phMessage" placeholder="Project goals, links, deadlines…"></textarea>
           </div>
+          <div class="form__captcha">
+            <div class="h-captcha" data-captcha="true" data-theme="light"></div>
+          </div>
           <button class="btn btn--primary btn--full" type="submit" data-i18n="contact.submit">Send message</button>
           <p class="form__status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
         </form>
@@ -615,7 +618,8 @@
     </div>
   </footer>
 
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://web3forms.com/client/script.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
