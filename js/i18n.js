@@ -5,9 +5,9 @@
 
   var STRINGS = {
     en: {
-      'meta.title': 'Web Development in Afghanistan | Peshraft Technologies',
+      'meta.title': 'The Digital Silk Road | Peshraft Technologies',
       'meta.description':
-        'Peshraft Technologies provides web design, portfolio websites, LMS, SIS, and custom business systems in Kabul and across Afghanistan.',
+        'The Digital Silk Road — Peshraft Technologies. From Kabul to the world: fast, secure websites and hosting for Afghanistan. Put your business on the road — use cases and a promise built here.',
       'meta.keywords':
         'web development Afghanistan, website design Kabul, portfolio website Afghanistan, custom website development Kabul, business website Afghanistan, LMS development Afghanistan, Moodle setup Afghanistan, student information system Afghanistan, ERP system Afghanistan, CRM system Kabul, software development Afghanistan, responsive web design Afghanistan, SEO services Kabul, website maintenance Afghanistan, e-commerce website Afghanistan, Herat web design, Kandahar web development, Mazar-e-Sharif website design, Jalalabad web services, Kunduz website development, Bamyan web design, Ghazni web development, Khost web development, Lashkar Gah web design',
       'meta.ogLocale': 'en_US',
@@ -18,8 +18,130 @@
       'nav.howWeWork': 'How we work',
       'nav.work': 'Work',
       'nav.about': 'About us',
-      'nav.pricing': 'Pricing',
       'nav.cta': 'Start a project',
+      'nav.useCases': 'Use cases',
+      'movement.hero.badge': 'The Digital Silk Road · Powered by Peshraft Technologies',
+      'movement.hero.line1': 'The Silk Road Ran Through Us.',
+      'movement.hero.line2': 'The Digital Road Will Too.',
+      'movement.hero.line3': 'From Kabul to the World.',
+      'movement.hero.lede': 'Your business. Your country. Visible to the world.',
+      'movement.hero.ctaPrimary': 'Put Your Business on the Road →',
+      'movement.hero.ctaSecondary': 'See How It Works',
+      'movement.hero.scrollHint': 'Scroll',
+      'movement.uc.title': 'Built for Every Afghan Business',
+      'movement.uc.intro':
+        'Whether you run a barbershop in Kandahar or a clinic in Kabul — your business deserves to be found.',
+      'movement.uc.photoDisclaimer':
+        'Photos are illustrative only and do not show specific Peshraft customers. The supermarket image is credited on the photo (Unsplash); other images are supplied for this page.',
+      'movement.uc.barber.tag': 'BARBERSHOP | آرایشگاه | حجامت',
+      'movement.uc.barber.title': 'From the Neighborhood Barber to the City\'s Best',
+      'movement.uc.barber.body':
+        'In a street with five barbershops, the one with a website wins the new customer every time. Your photos are your most powerful tool — show your best work and let customers choose you before they leave home.',
+      'movement.uc.barber.imgAlt':
+        'Street barbershop: a barber shaving a reclined customer in a leather chair under a blue tarp; another man sits in the foreground.',
+      'movement.uc.barber.b1': 'Showcase your best haircut & beard work with photos',
+      'movement.uc.barber.b2': 'Appear when people search "barber near me" on Google',
+      'movement.uc.barber.b3': 'Stand out from every competitor on your street',
+      'movement.uc.barber.b4': 'Build a loyal following that keeps coming back',
+      'movement.uc.barber.b5': 'Attract the youth market — they decide online first',
+      'movement.uc.pharmacy.tag': 'PHARMACY | دواخانه | درملتون',
+      'movement.uc.pharmacy.title': 'Trust Is Everything in Healthcare. A Website Builds It.',
+      'movement.uc.pharmacy.body':
+        'Customers are putting their health in your hands. A website with your pharmacist\'s name, your license details, and your product range builds the kind of trust a phone number never can.',
+      'movement.uc.pharmacy.imgAlt':
+        'A pharmacist reaches for a medicine box from densely stocked wooden shelves in a bright pharmacy.',
+      'movement.uc.pharmacy.b1': 'Display your license and credentials — instant legitimacy',
+      'movement.uc.pharmacy.b2': 'List your medicine range so customers call knowing you have it',
+      'movement.uc.pharmacy.b3': 'Be found in health emergencies when people search online',
+      'movement.uc.pharmacy.b4': 'Attract NGO and clinic supply partnerships',
+      'movement.uc.pharmacy.b5': 'Stand apart from unverified, untrusted competitors',
+      'movement.uc.grocery.tag': 'SUPERMARKET | سوپرمارکت | سوپرمارکټ',
+      'movement.uc.grocery.title': 'Your Shelves Are Full. Make Sure the World Knows.',
+      'movement.uc.grocery.body':
+        'Restaurants, hotels, and offices looking for a reliable grocery supplier search online. Your website captures that business before they find someone else.',
+      'movement.uc.grocery.imgAlt': 'A vendor seated before stacked goods at a local market.',
+      'movement.uc.grocery.photoCreditHtml':
+        'Photo by <a href="https://unsplash.com/@mhtaheri19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">mohammad hassan taheri</a> on <a href="https://unsplash.com/photos/a-man-sitting-on-the-ground-in-front-of-a-pile-of-clothing-0EwigJ6vSwY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>',
+      'movement.uc.grocery.b1': 'Attract bulk and wholesale buyers who search online',
+      'movement.uc.grocery.b2': 'Show your product range to customers before they visit',
+      'movement.uc.grocery.b3': 'Be found by Afghans abroad sending packages to family',
+      'movement.uc.grocery.b4': 'Announce Ramadan and Eid deals to the whole city',
+      'movement.uc.grocery.b5': 'Look as professional as any large supermarket chain',
+      'movement.uc.clinic.tag': 'CLINIC | کلینیک | کلینیک',
+      'movement.uc.clinic.title': 'Patients Choose the Doctor They Can Trust. Be That Doctor.',
+      'movement.uc.clinic.body':
+        'Before a patient walks through your door, they have already decided whether to trust you. That decision happens online.',
+      'movement.uc.clinic.imgAlt':
+        'A healthcare provider measures a seated patient\'s blood pressure with a stethoscope and manual cuff at a clinic desk.',
+      'movement.uc.clinic.b1': 'Doctor profiles with qualifications build instant trust',
+      'movement.uc.clinic.b2': 'Attract patients from other provinces searching for specialists',
+      'movement.uc.clinic.b3': 'Be found by health NGOs and international partners',
+      'movement.uc.clinic.b4': 'Publish health content in Dari and Pashto — become the authority',
+      'movement.uc.clinic.b5': 'Recruit better qualified doctors to your team',
+      'movement.uc.boutique.tag': 'BOUTIQUE | بوتیک | بوتیک',
+      'movement.uc.boutique.title': 'Your Designs Deserve to Be Seen Beyond Your Street.',
+      'movement.uc.boutique.body':
+        'Fashion is visual. The moment a customer sees your collection online, they are already planning their visit.',
+      'movement.uc.boutique.imgAlt':
+        'A woman in traditional dress and jewelry stands in a bright boutique with stacked wool hats and crafts on display.',
+      'movement.uc.boutique.b1': 'Show your collection — photos sell before customers arrive',
+      'movement.uc.boutique.b2': 'Reach Afghan women who prefer to browse privately first',
+      'movement.uc.boutique.b3': 'Connect with the Afghan diaspora seeking authentic clothing',
+      'movement.uc.boutique.b4': 'Publish Eid and Nowruz collections before the season',
+      'movement.uc.boutique.b5': 'Build a brand that outlasts any single season',
+      'movement.uc.school.tag': 'LEARNING INSTITUTE | موسسه آموزشی | زده‌کړې مرکز',
+      'movement.uc.school.title': 'Education Is the Most Respected Investment in Afghanistan.',
+      'movement.uc.school.body':
+        'Parents researching schools for their children go online first. A website with your teachers\' profiles, curriculum, and results wins enrollment before a single visit.',
+      'movement.uc.school.imgAlt':
+        'Young students in headscarves sit in rows on a patterned carpet in a classroom, facing the camera in soft natural light.',
+      'movement.uc.school.b1': 'Teacher profiles and qualifications build parental trust',
+      'movement.uc.school.b2': 'List every course and program — students find you by subject',
+      'movement.uc.school.b3': 'Attract NGO partnerships and scholarship program eligibility',
+      'movement.uc.school.b4': 'Share alumni success stories — the most powerful proof',
+      'movement.uc.school.b5': 'Document your results: pass rates, placements, achievements',
+      'movement.promise.title': 'Your Dream Website. Our Promise.',
+      'movement.promise.secureTitle': 'Secure',
+      'movement.promise.secureBody':
+        'Your website is protected 24 hours a day, 7 days a week. Your data. Your customers. Always safe.',
+      'movement.promise.fastTitle': 'Fast',
+      'movement.promise.fastBody':
+        'Lightning fast loading. On any device. Even on slow Afghan internet connections.',
+      'movement.promise.strongTitle': 'Strong',
+      'movement.promise.strongBody':
+        'Built on world-class servers. Never goes down. Always there for your customers.',
+      'movement.promise.afghanTitle': 'Afghan-owned',
+      'movement.promise.afghanBody':
+        'We are Afghan. We speak your language. We understand your business. We are here.',
+      'movement.vision.title': 'Every Business That Goes Online Makes Afghanistan Stronger.',
+      'movement.vision.body1':
+        'When the world searches for Afghan products, services, and businesses — they need to find YOU. Not silence. Not nothing. YOU.',
+      'movement.vision.body2': 'This is bigger than a website. This is Afghanistan\'s digital future.',
+      'movement.vision.body3': 'And it starts with one decision — yours.',
+      'movement.vision.c1Label': 'Businesses already online',
+      'movement.vision.c2Label': 'Provinces covered',
+      'movement.final.title': 'Your Business Is Ready. Are You?',
+      'movement.final.ctaPrimary': 'Build My Website Now',
+      'movement.final.ctaSecondary': 'Talk to Us on WhatsApp',
+      'movement.whatsapp.aria': 'Chat with Peshraft on WhatsApp',
+      'movement.whatsapp.prefill':
+        'Hello Peshraft, I want to learn more about getting a website for my business.',
+      'movement.footer.movementName': 'The Digital Silk Road',
+      'movement.footer.movementTag': 'The Silk Road ran through us. The digital road will too.',
+      'movement.footer.badge': 'Proud member of The Digital Silk Road — powered by Peshraft Technologies',
+      'movement.footer.linksTitle': 'Quick links',
+      'movement.footer.linkHome': 'Home',
+      'movement.footer.linkServices': 'Services',
+      'movement.footer.linkUseCases': 'Use cases',
+      'movement.footer.linkAbout': 'About',
+      'movement.footer.linkContact': 'Contact',
+      'movement.footer.connectTitle': 'Connect',
+      'movement.footer.socialFacebook': 'Facebook',
+      'movement.footer.socialTiktok': 'TikTok',
+      'movement.footer.socialInstagram': 'Instagram',
+      'movement.footer.socialWhatsapp': 'WhatsApp',
+      'movement.footer.socialGbp': 'Google Business Profile',
+      'movement.footer.copy': '© 2026 Peshraft Technologies. Built in Afghanistan. For Afghanistan.',
       'hero.eyebrow': 'Digital craftsmanship',
       'hero.titleLead': 'Websites that ',
       'hero.titleAccent': 'move your business forward',
@@ -236,9 +358,9 @@
       'infra.p4': ''
     },
     ps: {
-      'meta.title': 'په افغانستان کې ویب پراختیا | پشرفت ټکنالوژي',
+      'meta.title': 'ډیجیټل د ابریشم لار | پشرفت ټکنالوژي',
       'meta.description':
-        'پشرفت ټکنالوژي په کابل او ټول افغانستان کې د ویب ډیزاین، پورټفولیو پاڼو، LMS، SIS او اداري سیستمونو خدمتونه وړاندې کوي.',
+        'ډیجیټل د ابریشم لار — د پشرفت ټکنالوژي لخوا. د کابل څخه تر نړۍ پورې: چټکې او خوندي ویب پاڼې او هسټینګ د افغانستان لپاره. خپله سوداګري لار ته کیږئ — کارونو بېلګې او ژمنه په افغانستان کې جوړه شوې.',
       'meta.keywords':
         'د ویب پاڼې جوړول افغانستان, په کابل کې د ویب ډیزاین خدمتونه, د ویب پراختیا شرکت افغانستان, د سوداګرۍ ویب پاڼه جوړول, د پورټفولیو ویب پاڼه جوړول, د ای کامرس ویب پاڼه جوړول افغانستان, د ښوونځي ویب سیستم جوړول, د پوهنتون LMS جوړول افغانستان, د Moodle سیستم جوړول, د محصلینو معلوماتي سیستم جوړول, د ادارې مدیریت سیستم جوړول, د CRM سیستم جوړول کابل, د ERP سیستم جوړول افغانستان, د SEO خدمتونه کابل, د ویب پاڼې ساتنه افغانستان, ارزانه ویب پراختیا کابل, مسلکي ویب ډیزاین افغانستان, هرات ویب ډیزاین, کندهار ویب پراختیا, مزار شریف ویب ډیزاین, جلال اباد ویب خدمتونه, کندز ویب پراختیا, بامیان ویب ډیزاین, غزني ویب پراختیا, خوست ویب پراختیا, لشکرګاه ویب ډیزاین',
       'meta.ogLocale': 'ps_AF',
@@ -249,8 +371,130 @@
       'nav.howWeWork': 'څنګه کار کوو',
       'nav.work': 'کارونه',
       'nav.about': 'زموږ په اړه',
-      'nav.pricing': 'نرخونه',
       'nav.cta': 'پروژه پیل کړئ',
+      'nav.useCases': 'د کارونو بېلګې',
+      'movement.hero.badge': 'ډیجیټل د ابریشم لار · د پشرفت ټکنالوژي لخوا',
+      'movement.hero.line1': 'د ابریشم لار زموږ له مینځه تللې.',
+      'movement.hero.line2': 'د ډیجیټل لار هم به تیریږي.',
+      'movement.hero.line3': 'د کابل څخه تر نړۍ پورې.',
+      'movement.hero.lede': 'ستاسو سوداګري. ستاسو هیواد. نړۍ ته ښکاره.',
+      'movement.hero.ctaPrimary': 'خپله سوداګري لار ته کیږده ←',
+      'movement.hero.ctaSecondary': 'څنګه کار کوي وګورئ',
+      'movement.hero.scrollHint': 'سکرول',
+      'movement.uc.title': 'د هر افغان سوداګرۍ لپاره جوړ شوی',
+      'movement.uc.intro':
+        'که د کندهار حجامت وي که د کابل کلینیک — ستاسو سوداګري د موندلو وړ ده.',
+      'movement.uc.photoDisclaimer':
+        'عکسونه یوازې د بېلګې لپاره دي او د پشرفت ځانګړي پیرودونکي نه ښي. د سوپرمارکت انځور په عکس کې منسوب دی (Unsplash)؛ نور د دې پاڼې لپاره برابر شوي.',
+      'movement.uc.barber.tag': 'حجامت | BARBERSHOP | آرایشگاه',
+      'movement.uc.barber.title': 'د کوڅې حجامت نه د ښار ترټولو غوره',
+      'movement.uc.barber.body':
+        'په هغه کوڅه کې چې پنځه حجامتونه وي، هغه چې ویب پاڼه لري هر ځل نوی پیرودونکی وړي. ستاسو عکسونه ستاسو ترټولو قوي وسیله ده — خپل غوره کار وښایاست.',
+      'movement.uc.barber.imgAlt':
+        'د کوڅې حجامت: حجامت په چرمي څوکۍ کې ناست پیرودونکی ږیریږي؛ شین پلاستیکي پرده؛ بل سړی په مخ کې ناست دی.',
+      'movement.uc.barber.b1': 'د وریښتو او ږیرې غوره کار عکسونو سره',
+      'movement.uc.barber.b2': 'کله چې خلک په ګوګل کې «نږدې حجامت» لټوي ښکاره اوسئ',
+      'movement.uc.barber.b3': 'د خپلې کوڅې له ټولو سیالانو څخه جلا اوسئ',
+      'movement.uc.barber.b4': 'وفادار پیرودونکي چې بیرته راځي جوړ کړئ',
+      'movement.uc.barber.b5': 'ځوانان لومړی آنلاین پریکړه کوي — هغوی ته ورسیږئ',
+      'movement.uc.pharmacy.tag': 'درملتون | PHARMACY | دواخانه',
+      'movement.uc.pharmacy.title': 'د روغتیا په برخه کې باور هر څه دی. ویب پاڼه یې جوړوي.',
+      'movement.uc.pharmacy.body':
+        'پیرودونکي خپله روغتیا ستاسو لاسونو ته سپاري. یوه ویب پاڼه د درملتون د دارو ساز نوم، جواز او محصولاتو سره هغه باور جوړوي چې یو تلیفون شمیره هیڅکله نشي کولای.',
+      'movement.uc.pharmacy.imgAlt':
+        'په روښانه درملتون کې دارو ساز له ډکو نجورو الماریو څخه د درملو یوه بکسه اخلي.',
+      'movement.uc.pharmacy.b1': 'جواز او اسناد وښایاست — فوري مشروعیت',
+      'movement.uc.pharmacy.b2': 'د درملو لست — پیرودونکی پوهیږي چې تاسو لرئ',
+      'movement.uc.pharmacy.b3': 'په اضطراري روغتیايي لټون کې ومومل شئ',
+      'movement.uc.pharmacy.b4': 'NGO او کلینیکونو سره د عرضې ملګرتیا',
+      'movement.uc.pharmacy.b5': 'د ناتایید شویو سیالانو څخه جلا اوسئ',
+      'movement.uc.grocery.tag': 'سوپرمارکټ | SUPERMARKET | سوپرمارکت',
+      'movement.uc.grocery.title': 'ستاسو الماریانې ډکې دي. ډاډ ترلاسه کړئ چې نړۍ پوهیږي.',
+      'movement.uc.grocery.body':
+        'رستورانونه، هوټلونه او دفترونه چې د معتبر خوراکي توکو عرضه کوونکي لټوي، آنلاین لټون کوي. ستاسو ویب پاڼه هغه سوداګري نیسي مخکې له دې چې بل ومومي.',
+      'movement.uc.grocery.imgAlt': 'یوه پلورونکی چې په ځایي بازار کې د جامو له ډېر ګډ په مخ کې ناست دی.',
+      'movement.uc.grocery.photoCreditHtml':
+        'انځور له <a href="https://unsplash.com/@mhtaheri19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">mohammad hassan taheri</a> څخه په <a href="https://unsplash.com/photos/a-man-sitting-on-the-ground-in-front-of-a-pile-of-clothing-0EwigJ6vSwY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a> کې',
+      'movement.uc.grocery.b1': 'عمده او عمده پیرودونکي چې آنلاین لټوي',
+      'movement.uc.grocery.b2': 'د لیدنې دمخه محصولات وښایاست',
+      'movement.uc.grocery.b3': 'هغه افغانان چې کورنیو ته بستې لیږي تاسو ومومي',
+      'movement.uc.grocery.b4': 'د رمضان او اختر وړاندیزونه ټول ښار ته',
+      'movement.uc.grocery.b5': 'لکه لوی زنځیرونه مسلکي ښکاره اوسئ',
+      'movement.uc.clinic.tag': 'کلینیک | CLINIC | کلینیک',
+      'movement.uc.clinic.title': 'ناروغان هغه ډاکتر غوره کوي چې ورباندې باور کوي. هغه ډاکتر اوسئ.',
+      'movement.uc.clinic.body':
+        'مخکې له دې چې ناروغ ستاسو دروازې ته راشي، دمخه یې پریکړه کړې چې ستاسو باور وکړي که نه. دا پریکړه آنلاین کیږي.',
+      'movement.uc.clinic.imgAlt':
+        'په کلینیک کې روغتیایي کارکوونکی د ستاتوسکوپ او لاسي فشار اندازونکي سره د ناست ناروغ د وینې فشار اندازوي.',
+      'movement.uc.clinic.b1': 'د ډاکټرانو پروفایلونه او اسناد باور جوړوي',
+      'movement.uc.clinic.b2': 'د نورو ولایتونو ناروغان چې متخصص لټوي',
+      'movement.uc.clinic.b3': 'د روغتیا NGO او نړیوالو ملګرو لټون',
+      'movement.uc.clinic.b4': 'په پښتو او دري کې روغتیايي مینځپانګه — مرجع اوسئ',
+      'movement.uc.clinic.b5': 'غوره ډاکټران ستاسو ټیم ته راجلب کړئ',
+      'movement.uc.boutique.tag': 'بوتیک | BOUTIQUE | بوتیک',
+      'movement.uc.boutique.title': 'ستاسو ډیزاینونه د ستاسو کوڅې هاخوا د لیدلو وړ دي.',
+      'movement.uc.boutique.body':
+        'فیشن لیدني دی. هغه شیبه چې پیرودونکی ستاسو ټولګه آنلاین ویني، دمخه د لیدنې پلان کوي.',
+      'movement.uc.boutique.imgAlt':
+        'په روښانه بوتیک کې د سنتی جامو او زیور په سر یوه ښځه د ګنډو پاکولو او صنایعو مخې ته ولاړه ده.',
+      'movement.uc.boutique.b1': 'ټولګه عکسونو سره — پیرود د لیدنې دمخه',
+      'movement.uc.boutique.b2': 'هغه افغانې چې لومړی په ځان کې لټون کوي',
+      'movement.uc.boutique.b3': 'مهاجر افغانان اصلي جامې لټوي — تاسو سره وصل کړئ',
+      'movement.uc.boutique.b4': 'د اختر او نوروز ټولګې د فصل دمخه',
+      'movement.uc.boutique.b5': 'هغه برانډ جوړ کړئ چې فصل له فصل څخه پاتې وي',
+      'movement.uc.school.tag': 'زده‌کړې مرکز | LEARNING INSTITUTE | موسسه آموزشی',
+      'movement.uc.school.title': 'زده‌کړه د افغانستان کې ترټولو درنه پانګه‌اچونه ده.',
+      'movement.uc.school.body':
+        'هغه مور او پلار چې د خپلو ماشومانو لپاره ښوونځی لټوي لومړی آنلاین ځي. یوه ویب پاڼه د معلمانو پروفایلونو، نصاب او پایلو سره د یوې لیدنې دمخه ثبت‌نام وړي.',
+      'movement.uc.school.imgAlt':
+        'د ښوونځي نجونې زده‌کړونکې د سرتنځو په سر په رنګارنګ فرش باندې په قطارونو کې ناستې دي؛ نرم رڼا له کړکۍ څخه.',
+      'movement.uc.school.b1': 'د معلمانو پروفایلونه د مور او پلار باور',
+      'movement.uc.school.b2': 'ټول کورسونه — د مضمون له مخې موندل کیږئ',
+      'movement.uc.school.b3': 'د NGO او بورسونو ملګرتیا',
+      'movement.uc.school.b4': 'د فارغانو کیسې — ترټولو قوي ثبوت',
+      'movement.uc.school.b5': 'پایلې، نمرې او بریالیتوبونه ثبت کړئ',
+      'movement.promise.title': 'ستاسو د خوب ویب پاڼه. زموږ ژمنه.',
+      'movement.promise.secureTitle': 'خوندي',
+      'movement.promise.secureBody':
+        'ستاسو ویب پاڼه ۲۴ ساعته، اوونۍ کې ۷ ورځې خوندي ده. ستاسو معلومات. ستاسو پیرودونکي. تل خوندي.',
+      'movement.promise.fastTitle': 'ګړندی',
+      'movement.promise.fastBody':
+        'خورا ګړندی لوډینګ. د هر وسیلې کې. حتی د افغانستان د ورو انټرنیټ اتصال سره.',
+      'movement.promise.strongTitle': 'پیاوړی',
+      'movement.promise.strongBody':
+        'د نړۍ کلاس سرورونو کې جوړ شوی. هیڅکله نه پریوزي. تل ستاسو پیرودونکو لپاره هلته دی.',
+      'movement.promise.afghanTitle': 'افغان مالکیت',
+      'movement.promise.afghanBody':
+        'موږ افغان یو. ستاسو ژبه پوهیږو. ستاسو سوداګري پیژنو. موږ دلته یو.',
+      'movement.vision.title': 'هره سوداګري چې آنلاین کیږي افغانستان قوي‌تر کوي.',
+      'movement.vision.body1':
+        'کله چې نړۍ د افغاني محصولاتو، خدماتو او سوداګرۍ لټون کوي — اړتیا لري چې تاسو ومومي. نه خاموشي. نه هیڅ. تاسو.',
+      'movement.vision.body2': 'دا د یوې ویب پاڼې نه لوی دی. دا د افغانستان ډیجیټل راتلونکی دی.',
+      'movement.vision.body3': 'او د یوې پریکړې سره پیل کیږي — ستاسو پریکړه.',
+      'movement.vision.c1Label': 'سوداګرۍ دمخه آنلاین',
+      'movement.vision.c2Label': 'ولایتونه پوښل شوي',
+      'movement.final.title': 'ستاسو سوداګري چمتو ده. ایا تاسو چمتو یاست؟',
+      'movement.final.ctaPrimary': 'اوس زما ویب پاڼه جوړه کړئ',
+      'movement.final.ctaSecondary': 'زموږ سره واټساپ کې خبرې وکړئ',
+      'movement.whatsapp.aria': 'په واټساپ کې له پشرفت سره خبرې وکړئ',
+      'movement.whatsapp.prefill':
+        'سلام پیشرفت، زه غواړم د خپلې سوداګرۍ لپاره د ویب پاڼې په اړه نور معلومات ترلاسه کړم.',
+      'movement.footer.movementName': 'ډیجیټل د ابریشم لار',
+      'movement.footer.movementTag': 'د ابریشم لار زموږ له مینځه تللې. د ډیجیټل لار هم به تیریږي.',
+      'movement.footer.badge': 'د ډیجیټل د ابریشم لار فخر غړی — د پشرفت ټکنالوژي لخوا',
+      'movement.footer.linksTitle': 'چټک لینکونه',
+      'movement.footer.linkHome': 'کور',
+      'movement.footer.linkServices': 'خدمتونه',
+      'movement.footer.linkUseCases': 'د کارونو بېلګې',
+      'movement.footer.linkAbout': 'زموږ په اړه',
+      'movement.footer.linkContact': 'اړیکه',
+      'movement.footer.connectTitle': 'اړیکې',
+      'movement.footer.socialFacebook': 'فیسبوک',
+      'movement.footer.socialTiktok': 'ټیک ټاک',
+      'movement.footer.socialInstagram': 'انستاګرام',
+      'movement.footer.socialWhatsapp': 'واټساپ',
+      'movement.footer.socialGbp': 'ګوګل بزنس',
+      'movement.footer.copy': '© ۱۴۰۵ پیشرفت ټکنالوژي. افغانستان کې جوړ شوی. د افغانستان لپاره.',
       'pricing.business.popular': 'غوره ارزښت',
       'hero.eyebrow': 'ډیجیټل مهارت',
       'hero.titleLead': 'ویب پاڼې چې ',
@@ -468,9 +712,9 @@
       'infra.p4': ''
     },
     prs: {
-      'meta.title': 'توسعه وب در افغانستان | پشرفت تکنالوژی',
+      'meta.title': 'جاده دیجیتال ابریشم | پشرفت تکنالوژی',
       'meta.description':
-        'پشرفت تکنالوژی در کابل و سراسر افغانستان خدمات طراحی سایت، وب‌سایت پورتفولیو، LMS، SIS و سیستم‌های مدیریتی ارائه می‌کند.',
+        'جاده دیجیتال ابریشم — با پشرفت تکنالوژی. از کابل تا جهان: وب‌سایت‌های سریع و امن و میزبانی برای افغانستان. کسب‌وکار خود را روی جاده بگذارید — نمونه‌های کاربردی و وعده‌ای که در افغانستان ساخته شده است.',
       'meta.keywords':
         'طراحی وب‌سایت در افغانستان, توسعه وب در کابل, شرکت طراحی سایت افغانستان, ساخت وب‌سایت شرکتی در کابل, ساخت سایت پورتفولیو افغانستان, طراحی سایت فروشگاهی افغانستان, توسعه سیستم مدیریتی افغانستان, ساخت سیستم CRM در کابل, توسعه سیستم ERP افغانستان, راه‌اندازی LMS در افغانستان, پیاده‌سازی Moodle افغانستان, سیستم معلومات محصلین افغانستان, طراحی سایت دانشگاهی افغانستان, خدمات سئو در کابل, پشتیبانی و نگهداری سایت افغانستان, طراحی سایت واکنش‌گرا افغانستان, توسعه نرم‌افزار تحت وب افغانستان, هرات طراحی سایت, قندهار توسعه وب, مزار شریف طراحی سایت, جلال‌آباد خدمات وب, کندز توسعه وب, بامیان طراحی سایت, غزنی توسعه وب, خوست توسعه وب, لشکرگاه طراحی سایت',
       'meta.ogLocale': 'fa_AF',
@@ -481,8 +725,130 @@
       'nav.howWeWork': 'شیوه کار',
       'nav.work': 'نمونه‌کارها',
       'nav.about': 'دربارهٔ ما',
-      'nav.pricing': 'قیمت‌ها',
       'nav.cta': 'شروع یک پروژه',
+      'nav.useCases': 'نمونه‌های کاربردی',
+      'movement.hero.badge': 'جاده دیجیتال ابریشم · با پشرفت تکنالوژی',
+      'movement.hero.line1': '«جاده ابریشم از ما گذشت.»',
+      'movement.hero.line2': '«جاده دیجیتال هم خواهد گذشت.»',
+      'movement.hero.line3': '«از کابل تا جهان.»',
+      'movement.hero.lede': '«تجارت شما. کشور شما. در برابر جهان دیده می‌شود.»',
+      'movement.hero.ctaPrimary': '«تجارت خود را روی جاده بگذار» ←',
+      'movement.hero.ctaSecondary': 'ببینید چگونه کار می‌کند',
+      'movement.hero.scrollHint': 'اسکرول',
+      'movement.uc.title': '«برای هر تجارت افغانی ساخته شده»',
+      'movement.uc.intro':
+        '«چه آرایشگاه در قندهار داشته باشید چه کلینیک در کابل — تجارت شما لایق دیده شدن است.»',
+      'movement.uc.photoDisclaimer':
+        'تصاویر صرفاً نمونه‌ای هستند و مشتریان مشخص پشرفت را نشان نمی‌دهند. تصویر سوپرمارکت روی عکس با منبع آمده (Unsplash)؛ سایر تصاویر برای این صفحه تهیه شده‌اند.',
+      'movement.uc.barber.tag': 'آرایشگاه | BARBERSHOP | حجامت',
+      'movement.uc.barber.title': '«از آرایشگاه محله تا بهترین در شهر»',
+      'movement.uc.barber.body':
+        '«در خیابانی با پنج آرایشگاه، آن که وبسایت دارد هر بار مشتری جدید را می‌برد. عکس‌های شما قوی‌ترین ابزار شما هستند.»',
+      'movement.uc.barber.imgAlt':
+        'آرایشگاه خیابانی: آرایشگر در حال اصلاح صورت مشتری لمیده روی صندلی چرمی زیر سایه‌بان آبی؛ مردی دیگر در پیش‌زمینه نشسته است.',
+      'movement.uc.barber.b1': 'نمایش بهترین کوتاهی مو، ریش و دقت برش با عکس',
+      'movement.uc.barber.b2': 'وقتی مردم «آرایشگر نزدیک من» را جستجو می‌کنند دیده شوید',
+      'movement.uc.barber.b3': 'از هر رقیبی در همان خیابان متمایز شوید',
+      'movement.uc.barber.b4': 'پایگاه مشتریان وفادار بسازید',
+      'movement.uc.barber.b5': 'بازار جوانان — آن‌ها اول آنلاین تصمیم می‌گیرند',
+      'movement.uc.pharmacy.tag': 'دواخانه | PHARMACY | درملتون',
+      'movement.uc.pharmacy.title': '«اعتماد در صحت همه چیز است. وبسایت آن را می‌سازد.»',
+      'movement.uc.pharmacy.body':
+        '«مشتریان صحت خود را به دست شما می‌سپارند. یک وبسایت با نام داروساز، مجوز و محصولات شما نوعی اعتماد می‌سازد که یک شماره تلفن هرگز نمی‌تواند.»',
+      'movement.uc.pharmacy.imgAlt':
+        'داروساز در داروخانه روشن، جعبه دارو را از قفسه‌های چوبی پر از دارو برمی‌دارد.',
+      'movement.uc.pharmacy.b1': 'نمایش مجوز و مدارک — اعتبار فوری',
+      'movement.uc.pharmacy.b2': 'فهرست داروها تا مشتری بداند شما دارید',
+      'movement.uc.pharmacy.b3': 'در شرایط اضطراری سلامت آنلاین پیدا شوید',
+      'movement.uc.pharmacy.b4': 'همکاری عرضه با NGO و کلینیک‌ها',
+      'movement.uc.pharmacy.b5': 'از رقبای تأییدنشده جدا باشید',
+      'movement.uc.grocery.tag': 'سوپرمارکت | SUPERMARKET | سوپرمارکټ',
+      'movement.uc.grocery.title': '«قفسه‌های شما پر است. مطمئن شوید جهان می‌داند.»',
+      'movement.uc.grocery.body':
+        '«رستوران‌ها، هتل‌ها و ادارات که به دنبال تأمین‌کننده مواد غذایی هستند، آنلاین جستجو می‌کنند. وبسایت شما آن تجارت را قبل از اینکه کس دیگری پیدا کند، می‌گیرد.»',
+      'movement.uc.grocery.imgAlt': 'فروشنده نشسته مقابل انبوه لباس در یک بازار محلی.',
+      'movement.uc.grocery.photoCreditHtml':
+        'عکس از <a href="https://unsplash.com/@mhtaheri19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">mohammad hassan taheri</a> در <a href="https://unsplash.com/photos/a-man-sitting-on-the-ground-in-front-of-a-pile-of-clothing-0EwigJ6vSwY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>',
+      'movement.uc.grocery.b1': 'جذب خریداران عمده که آنلاین جستجو می‌کنند',
+      'movement.uc.grocery.b2': 'نمایش محصولات قبل از حضور',
+      'movement.uc.grocery.b3': 'یافتن توسط افغانان خارج از کشور برای بسته‌های خانوادگی',
+      'movement.uc.grocery.b4': 'اعلام پیشنهادهای رمضان و عید برای کل شهر',
+      'movement.uc.grocery.b5': 'به اندازه زنجیره‌های بزرگ حرفه‌ای به نظر برسید',
+      'movement.uc.clinic.tag': 'کلینیک | CLINIC | کلینیک',
+      'movement.uc.clinic.title': '«بیماران پزشکی را انتخاب می‌کنند که به او اعتماد دارند. آن پزشک باشید.»',
+      'movement.uc.clinic.body':
+        '«قبل از اینکه بیمار از در شما وارد شود، قبلاً تصمیم گرفته که به شما اعتماد کند یا نه. این تصمیم آنلاین گرفته می‌شود.»',
+      'movement.uc.clinic.imgAlt':
+        'ارائه‌دهنده خدمات سلامت فشار خون بیمار نشسته را با گوشی پزشکی و فشارسنج دستی پشت میز مطب اندازه می‌گیرد.',
+      'movement.uc.clinic.b1': 'پروفایل پزشکان و مدارک — اعتماد فوری',
+      'movement.uc.clinic.b2': 'جذب بیماران استان‌های دیگر برای متخصص',
+      'movement.uc.clinic.b3': 'یافتن توسط NGOها و شرکای بین‌المللی',
+      'movement.uc.clinic.b4': 'محتوای سلامت به دری و پشتو — مرجع شوید',
+      'movement.uc.clinic.b5': 'جذب پزشکان با صلاحیت بالاتر',
+      'movement.uc.boutique.tag': 'بوتیک | BOUTIQUE | بوتیک',
+      'movement.uc.boutique.title': '«طرح‌های شما لایق دیده شدن فراتر از کوچه شما هستند.»',
+      'movement.uc.boutique.body':
+        '«مد بصری است. لحظه‌ای که مشتری مجموعه شما را آنلاین می‌بیند، قبلاً برای بازدید برنامه‌ریزی می‌کند.»',
+      'movement.uc.boutique.imgAlt':
+        'زنی با لباس و زیور سنتی در بوتیک روشن؛ کلاه‌های پشمی چیده‌شده و صنایع دستی در ویترین.',
+      'movement.uc.boutique.b1': 'نمایش مجموعه — عکس‌ها قبل از حضور می‌فروشند',
+      'movement.uc.boutique.b2': 'دسترسی به زنان افغان که ترجیح می‌دهند نخست خصوصی ببینند',
+      'movement.uc.boutique.b3': 'ارتباط با diaspora برای پوشاک اصیل',
+      'movement.uc.boutique.b4': 'انتشار مجموعه‌های عید و نوروز پیش از فصل',
+      'movement.uc.boutique.b5': 'برندی بسازید که فراتر از یک فصل بماند',
+      'movement.uc.school.tag': 'موسسه آموزشی | LEARNING INSTITUTE | زده‌کړې مرکز',
+      'movement.uc.school.title': '«آموزش مهم‌ترین سرمایه‌گذاری در افغانستان است.»',
+      'movement.uc.school.body':
+        '«والدینی که برای فرزندانشان مدرسه جستجو می‌کنند ابتدا آنلاین می‌روند. یک وبسایت با پروفایل معلمان، برنامه درسی و نتایج، ثبت‌نام را قبل از یک بازدید واحد می‌برد.»',
+      'movement.uc.school.imgAlt':
+        'دانش‌آموزان دختر با روسری در ردیف روی فرش طرح‌دار کلاس، روبه‌روی دوربین در نور ملایم پنجره.',
+      'movement.uc.school.b1': 'پروفایل معلمان و صلاحیت‌ها — اعتماد والدین',
+      'movement.uc.school.b2': 'فهرست هر دوره و برنامه',
+      'movement.uc.school.b3': 'جذب همکاری NGO و واجد شرایط بورسیه',
+      'movement.uc.school.b4': 'داستان موفقیت فارغ‌التحصیلان',
+      'movement.uc.school.b5': 'ثبت نتایج: نرخ قبولی، جایگاه، دستاوردها',
+      'movement.promise.title': '«وبسایت رویایی شما. وعده ما.»',
+      'movement.promise.secureTitle': 'امن',
+      'movement.promise.secureBody':
+        '«وبسایت شما ۲۴ ساعته، ۷ روز هفته محافظت می‌شود. داده‌های شما. مشتریان شما. همیشه امن.»',
+      'movement.promise.fastTitle': 'سریع',
+      'movement.promise.fastBody':
+        '«بارگذاری بسیار سریع. روی هر دستگاهی. حتی با اتصال اینترنت کند افغانستان.»',
+      'movement.promise.strongTitle': 'قوی',
+      'movement.promise.strongBody':
+        '«بر روی سرورهای جهانی ساخته شده. هرگز از کار نمی‌افتد. همیشه برای مشتریان شما آنجاست.»',
+      'movement.promise.afghanTitle': 'مالکیت افغان',
+      'movement.promise.afghanBody':
+        '«ما افغان هستیم. زبان شما را می‌فهمیم. تجارت شما را می‌شناسیم. ما اینجاییم.»',
+      'movement.vision.title': '«هر تجارتی که آنلاین می‌شود افغانستان را قوی‌تر می‌کند.»',
+      'movement.vision.body1':
+        '«وقتی جهان به دنبال محصولات، خدمات و تجارت‌های افغانی می‌گردد — باید شما را پیدا کند. نه سکوت. نه هیچ. شما.»',
+      'movement.vision.body2': '«این بزرگتر از یک وبسایت است. این آینده دیجیتال افغانستان است.»',
+      'movement.vision.body3': '«و با یک تصمیم شروع می‌شود — تصمیم شما.»',
+      'movement.vision.c1Label': 'تجارت در حال حاضر آنلاین',
+      'movement.vision.c2Label': 'ولایت پوشش داده شده',
+      'movement.final.title': '«تجارت شما آماده است. آیا شما آماده‌اید؟»',
+      'movement.final.ctaPrimary': '«همین حالا وبسایتم را بسازید»',
+      'movement.final.ctaSecondary': '«از طریق واتساپ با ما صحبت کنید»',
+      'movement.whatsapp.aria': 'گفتگو با پشرفت در واتساپ',
+      'movement.whatsapp.prefill':
+        '«سلام پیشرفت، می‌خواهم درباره وبسایت برای تجارتم بیشتر بدانم.»',
+      'movement.footer.movementName': 'جاده دیجیتال ابریشم',
+      'movement.footer.movementTag': 'جاده ابریشم از ما گذشت. جاده دیجیتال هم خواهد گذشت.',
+      'movement.footer.badge': 'عضو افتخارآمیز جاده دیجیتال ابریشم — با پشرفت تکنالوژی',
+      'movement.footer.linksTitle': 'لینک‌های سریع',
+      'movement.footer.linkHome': 'خانه',
+      'movement.footer.linkServices': 'خدمات',
+      'movement.footer.linkUseCases': 'نمونه‌های کاربردی',
+      'movement.footer.linkAbout': 'دربارهٔ ما',
+      'movement.footer.linkContact': 'تماس',
+      'movement.footer.connectTitle': 'ارتباط',
+      'movement.footer.socialFacebook': 'فیسبوک',
+      'movement.footer.socialTiktok': 'تیک‌تاک',
+      'movement.footer.socialInstagram': 'اینستاگرام',
+      'movement.footer.socialWhatsapp': 'واتساپ',
+      'movement.footer.socialGbp': 'پروفایل کسب‌وکار گوگل',
+      'movement.footer.copy': '© ۱۴۰۵ پیشرفت تکنالوژی. ساخته شده در افغانستان. برای افغانستان.',
       'pricing.business.popular': 'بهترین ارزش',
       'hero.eyebrow': 'مهارت دیجیتال',
       'hero.titleLead': 'وب‌سایت‌هایی که ',
@@ -771,6 +1137,12 @@
     });
     document.querySelectorAll('[data-i18n-aria-label]').forEach(function (el) {
       el.setAttribute('aria-label', get(el.getAttribute('data-i18n-aria-label')));
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      el.setAttribute('alt', get(el.getAttribute('data-i18n-alt')));
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      el.innerHTML = get(el.getAttribute('data-i18n-html'));
     });
     applyMeta();
   }

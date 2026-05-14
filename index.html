@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Peshraft Technologies — Website development and hosting services. We build fast, secure digital experiences.">
+  <meta name="description" content="The Digital Silk Road — Peshraft Technologies. From Kabul to the world: the Silk Road ran through us; the digital road will too. Websites, hosting, and a movement to put every Afghan business on the map.">
   <meta name="keywords" content="web development Afghanistan, website design Kabul, software systems Afghanistan, portfolio website development, LMS development Afghanistan, CRM system Kabul, ERP development Afghanistan, SEO services Kabul">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Peshraft Technologies">
@@ -15,15 +15,15 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Peshraft Technologies">
   <meta property="og:url" content="https://peshraft.tech/">
-  <meta property="og:title" content="Peshraft Technologies | Web Development & Hosting">
-  <meta property="og:description" content="Peshraft Technologies — Website development and hosting services. We build fast, secure digital experiences.">
+  <meta property="og:title" content="The Digital Silk Road | Peshraft Technologies">
+  <meta property="og:description" content="The Digital Silk Road — powered by Peshraft Technologies. From Kabul to the world: fast, secure websites and hosting for Afghanistan. Put your business on the road.">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ps_AF">
   <meta property="og:locale:alternate" content="fa_AF">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Peshraft Technologies | Web Development & Hosting">
-  <meta name="twitter:description" content="Peshraft Technologies — Website development and hosting services. We build fast, secure digital experiences.">
-  <title>Peshraft Technologies | Web Development & Hosting</title>
+  <meta name="twitter:title" content="The Digital Silk Road | Peshraft Technologies">
+  <meta name="twitter:description" content="The Digital Silk Road — powered by Peshraft Technologies. From Kabul to the world: put your business on the road.">
+  <title>The Digital Silk Road | Peshraft Technologies</title>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -67,8 +67,9 @@
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/movement.css">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -95,10 +96,10 @@
         </button>
         <nav class="nav" id="site-nav" aria-label="Primary">
           <ul class="nav__list">
+            <li><a class="nav__link" href="#use-cases" data-i18n="nav.useCases">Use cases</a></li>
             <li><a class="nav__link" href="#services" data-i18n="nav.services">Services</a></li>
             <li><a class="nav__link" href="#approach" data-i18n="nav.howWeWork">How we work</a></li>
             <li><a class="nav__link" href="#portfolio" data-i18n="nav.work">Work</a></li>
-            <li><a class="nav__link" href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
             <li><a class="nav__link" href="#about" data-i18n="nav.about">About us</a></li>
             <li><a class="nav__link nav__link--cta" href="#contact" data-i18n="nav.cta">Start a project</a></li>
           </ul>
@@ -108,60 +109,253 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="eyebrow reveal" data-reveal data-i18n="hero.eyebrow">Digital craftsmanship</p>
-          <h1 class="hero__title reveal" data-reveal>
-            <span data-i18n="hero.titleLead">Websites that </span><span class="gradient-text" data-i18n="hero.titleAccent">move your business forward</span>
-          </h1>
-          <p class="hero__lede reveal" data-reveal data-i18n="hero.lede">
-            Peshraft Technologies designs and builds high-performance sites, then keeps them fast, secure, and online with dependable hosting.
-          </p>
-          <div class="hero__actions reveal" data-reveal>
-            <a class="btn btn--primary" href="#contact" data-i18n="hero.getInTouch">Get in touch</a>
-            <a class="btn btn--ghost" href="#services" data-i18n="hero.exploreServices">Explore services</a>
-          </div>
-          <dl class="hero__stats reveal" data-reveal>
-            <div class="stat">
-              <dt class="stat__label" data-i18n="hero.statDelivery">Delivery</dt>
-              <dd class="stat__value" data-i18n="hero.statDeliveryVal">Agile sprints</dd>
-            </div>
-            <div class="stat">
-              <dt class="stat__label" data-i18n="hero.statStack">Stack</dt>
-              <dd class="stat__value" data-i18n="hero.statStackVal">Modern &amp; lean</dd>
-            </div>
-            <div class="stat">
-              <dt class="stat__label" data-i18n="hero.statHosting">Hosting</dt>
-              <dd class="stat__value" data-i18n="hero.statHostingVal">Uptime focused</dd>
-            </div>
-          </dl>
+    <section class="movement-hero" id="movement-hero" aria-labelledby="movement-hero-heading">
+      <div class="movement-hero__bg" aria-hidden="true"></div>
+      <img
+        class="movement-hero__photo"
+        src="img/movement/hero-shopkeeper.webp"
+        alt=""
+        width="1920"
+        height="1080"
+        decoding="async"
+        fetchpriority="high"
+        onerror="this.classList.add('is-hidden')"
+      >
+      <div class="movement-hero__inner">
+        <p class="movement-hero__badge movement-display" data-i18n="movement.hero.badge">The Digital Silk Road · Powered by Peshraft Technologies</p>
+        <h1 id="movement-hero-heading" class="movement-hero__title movement-display">
+          <span class="movement-hero__title-line" data-i18n="movement.hero.line1">The Silk Road Ran Through Us.</span>
+          <span class="movement-hero__title-line" data-i18n="movement.hero.line2">The Digital Road Will Too.</span>
+          <span class="movement-hero__title-line movement-hero__title-line--kabul" data-i18n="movement.hero.line3">From Kabul to the World.</span>
+        </h1>
+        <p class="movement-hero__lede" data-i18n="movement.hero.lede">Your business. Your country. Visible to the world.</p>
+        <div class="movement-hero__actions">
+          <a class="btn--movement-primary" href="#contact" data-i18n="movement.hero.ctaPrimary">Put Your Business on the Road</a>
+          <a class="btn--movement-ghost" href="#use-cases" data-i18n="movement.hero.ctaSecondary">See How It Works</a>
         </div>
-        <div class="hero__visual reveal" data-reveal>
-          <div class="glass-card">
-            <div class="glass-card__header">
-              <span class="pulse"></span>
-              <span data-i18n="hero.livePreview">Live preview</span>
-            </div>
-            <div class="glass-card__body">
-              <div class="mock-browser">
-                <div class="mock-browser__chrome">
-                  <span></span><span></span><span></span>
-                </div>
-                <div class="mock-browser__viewport">
-                  <div class="mock-line mock-line--w80"></div>
-                  <div class="mock-line mock-line--w60"></div>
-                  <div class="mock-grid">
-                    <div class="mock-tile"></div>
-                    <div class="mock-tile mock-tile--accent"></div>
-                    <div class="mock-tile"></div>
-                  </div>
-                </div>
-              </div>
-              <p class="glass-card__caption" data-i18n="hero.cardCaption">From concept to deploy — one partner.</p>
-            </div>
+        <button type="button" class="movement-hero__scroll" data-movement-scroll-target="#use-cases">
+          <span data-i18n="movement.hero.scrollHint">Scroll</span>
+          <span class="movement-hero__scroll-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="movement-usecases" id="use-cases" aria-labelledby="usecases-heading">
+      <div class="movement-usecases__content">
+      <div class="movement-usecases__header">
+        <h2 id="usecases-heading" class="movement-usecases__title movement-display" data-i18n="movement.uc.title">Built for Every Afghan Business</h2>
+        <p class="movement-usecases__intro" data-i18n="movement.uc.intro">Whether you run a barbershop in Kandahar or a clinic in Kabul — your business deserves to be found.</p>
+      </div>
+
+      <article class="use-case reveal" data-reveal>
+        <div class="use-case__media">
+          <div class="use-case__visual use-case__visual--barber" aria-hidden="true"></div>
+          <img class="use-case__img" src="img/movement/usecase-barber.png" alt="Street barbershop: a barber shaving a reclined customer in a leather chair under a blue tarp; another man sits in the foreground." width="682" height="1024" loading="lazy" decoding="async" data-i18n-alt="movement.uc.barber.imgAlt" onerror="this.classList.add('is-hidden')">
+          <div class="use-case__accent" style="background-color:#f5a623" aria-hidden="true"></div>
+        </div>
+        <div class="use-case__body">
+          <span class="use-case__tag" data-i18n="movement.uc.barber.tag">BARBERSHOP | آرایشگاه | حجامت</span>
+          <h3 class="use-case__title" data-i18n="movement.uc.barber.title">From the Neighborhood Barber to the City's Best</h3>
+          <p class="use-case__text" data-i18n="movement.uc.barber.body">In a street with five barbershops, the one with a website wins the new customer every time. Your photos are your most powerful tool.</p>
+          <ul class="movement-checklist">
+            <li data-i18n="movement.uc.barber.b1">Showcase your best haircut &amp; beard work with photos</li>
+            <li data-i18n="movement.uc.barber.b2">Appear when people search 'barber near me' on Google</li>
+            <li data-i18n="movement.uc.barber.b3">Stand out from every competitor on your street</li>
+            <li data-i18n="movement.uc.barber.b4">Build a loyal following that keeps coming back</li>
+            <li data-i18n="movement.uc.barber.b5">Attract the youth market — they decide online first</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="use-case use-case--reverse reveal" data-reveal>
+        <div class="use-case__media">
+          <div class="use-case__visual use-case__visual--pharmacy" aria-hidden="true"></div>
+          <img class="use-case__img" src="img/movement/usecase-pharmacy.png" alt="A pharmacist reaches for a medicine box from densely stocked wooden shelves in a bright pharmacy." width="1024" height="682" loading="lazy" decoding="async" data-i18n-alt="movement.uc.pharmacy.imgAlt" onerror="this.classList.add('is-hidden')">
+          <div class="use-case__accent" style="background-color:#22c55e" aria-hidden="true"></div>
+        </div>
+        <div class="use-case__body">
+          <span class="use-case__tag" data-i18n="movement.uc.pharmacy.tag">PHARMACY | دواخانه | درملتون</span>
+          <h3 class="use-case__title" data-i18n="movement.uc.pharmacy.title">Trust Is Everything in Healthcare. A Website Builds It.</h3>
+          <p class="use-case__text" data-i18n="movement.uc.pharmacy.body">Customers are putting their health in your hands. A website with your pharmacist's name, your license details, and your product range builds trust a phone number never can.</p>
+          <ul class="movement-checklist">
+            <li data-i18n="movement.uc.pharmacy.b1">Display your license and credentials — instant legitimacy</li>
+            <li data-i18n="movement.uc.pharmacy.b2">List your medicine range so customers call knowing you have it</li>
+            <li data-i18n="movement.uc.pharmacy.b3">Be found in health emergencies when people search online</li>
+            <li data-i18n="movement.uc.pharmacy.b4">Attract NGO and clinic supply partnerships</li>
+            <li data-i18n="movement.uc.pharmacy.b5">Stand apart from unverified, untrusted competitors</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="use-case reveal" data-reveal>
+        <div class="use-case__media">
+          <div class="use-case__visual use-case__visual--market" aria-hidden="true"></div>
+          <img class="use-case__img" src="img/movement/usecase-supermarket.jpg" alt="A vendor seated before stacked goods at a local market." width="1200" height="800" loading="lazy" decoding="async" data-i18n-alt="movement.uc.grocery.imgAlt" onerror="this.classList.add('is-hidden')">
+          <p class="use-case__credit" data-i18n-html="movement.uc.grocery.photoCreditHtml"></p>
+          <div class="use-case__accent" style="background-color:#f5a623" aria-hidden="true"></div>
+        </div>
+        <div class="use-case__body">
+          <span class="use-case__tag" data-i18n="movement.uc.grocery.tag">SUPERMARKET | سوپرمارکت | سوپرمارکټ</span>
+          <h3 class="use-case__title" data-i18n="movement.uc.grocery.title">Your Shelves Are Full. Make Sure the World Knows.</h3>
+          <p class="use-case__text" data-i18n="movement.uc.grocery.body">Restaurants, hotels, and offices looking for a reliable grocery supplier search online. Your website captures that business before they find someone else.</p>
+          <ul class="movement-checklist">
+            <li data-i18n="movement.uc.grocery.b1">Attract bulk and wholesale buyers who search online</li>
+            <li data-i18n="movement.uc.grocery.b2">Show your product range to customers before they visit</li>
+            <li data-i18n="movement.uc.grocery.b3">Be found by Afghans abroad sending packages to family</li>
+            <li data-i18n="movement.uc.grocery.b4">Announce Ramadan and Eid deals to the whole city</li>
+            <li data-i18n="movement.uc.grocery.b5">Look as professional as any large supermarket chain</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="use-case use-case--reverse reveal" data-reveal>
+        <div class="use-case__media">
+          <div class="use-case__visual use-case__visual--clinic" aria-hidden="true"></div>
+          <img class="use-case__img" src="img/movement/usecase-clinic.png" alt="A healthcare provider measures a seated patient’s blood pressure with a stethoscope and manual cuff at a clinic desk." width="1024" height="682" loading="lazy" decoding="async" data-i18n-alt="movement.uc.clinic.imgAlt" onerror="this.classList.add('is-hidden')">
+          <div class="use-case__accent" style="background-color:#3b82f6" aria-hidden="true"></div>
+        </div>
+        <div class="use-case__body">
+          <span class="use-case__tag" data-i18n="movement.uc.clinic.tag">CLINIC | کلینیک | کلینیک</span>
+          <h3 class="use-case__title" data-i18n="movement.uc.clinic.title">Patients Choose the Doctor They Can Trust. Be That Doctor.</h3>
+          <p class="use-case__text" data-i18n="movement.uc.clinic.body">Before a patient walks through your door, they have already decided whether to trust you. That decision happens online.</p>
+          <ul class="movement-checklist">
+            <li data-i18n="movement.uc.clinic.b1">Doctor profiles with qualifications build instant trust</li>
+            <li data-i18n="movement.uc.clinic.b2">Attract patients from other provinces searching for specialists</li>
+            <li data-i18n="movement.uc.clinic.b3">Be found by health NGOs and international partners</li>
+            <li data-i18n="movement.uc.clinic.b4">Publish health content in Dari and Pashto — become the authority</li>
+            <li data-i18n="movement.uc.clinic.b5">Recruit better qualified doctors to your team</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="use-case reveal" data-reveal>
+        <div class="use-case__media">
+          <div class="use-case__visual use-case__visual--boutique" aria-hidden="true"></div>
+          <img class="use-case__img" src="img/movement/usecase-boutique.png" alt="A woman in traditional dress and jewelry stands in a bright boutique with stacked wool hats and crafts on display." width="1024" height="681" loading="lazy" decoding="async" data-i18n-alt="movement.uc.boutique.imgAlt" onerror="this.classList.add('is-hidden')">
+          <div class="use-case__accent" style="background-color:#ec4899" aria-hidden="true"></div>
+        </div>
+        <div class="use-case__body">
+          <span class="use-case__tag" data-i18n="movement.uc.boutique.tag">BOUTIQUE | بوتیک | بوتیک</span>
+          <h3 class="use-case__title" data-i18n="movement.uc.boutique.title">Your Designs Deserve to Be Seen Beyond Your Street.</h3>
+          <p class="use-case__text" data-i18n="movement.uc.boutique.body">Fashion is visual. The moment a customer sees your collection online, they are already planning their visit.</p>
+          <ul class="movement-checklist">
+            <li data-i18n="movement.uc.boutique.b1">Show your collection — photos sell before customers arrive</li>
+            <li data-i18n="movement.uc.boutique.b2">Reach Afghan women who prefer to browse privately first</li>
+            <li data-i18n="movement.uc.boutique.b3">Connect with the Afghan diaspora seeking authentic clothing</li>
+            <li data-i18n="movement.uc.boutique.b4">Publish Eid and Nowruz collections before the season</li>
+            <li data-i18n="movement.uc.boutique.b5">Build a brand that outlasts any single season</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="use-case use-case--reverse reveal" data-reveal>
+        <div class="use-case__media">
+          <div class="use-case__visual use-case__visual--school" aria-hidden="true"></div>
+          <img class="use-case__img" src="img/movement/usecase-school.png" alt="Young students in headscarves sit in rows on a patterned carpet in a classroom, facing the camera in soft natural light." width="1024" height="682" loading="lazy" decoding="async" data-i18n-alt="movement.uc.school.imgAlt" onerror="this.classList.add('is-hidden')">
+          <div class="use-case__accent" style="background-color:#8b5cf6" aria-hidden="true"></div>
+        </div>
+        <div class="use-case__body">
+          <span class="use-case__tag" data-i18n="movement.uc.school.tag">LEARNING INSTITUTE | موسسه آموزشی | زده‌کړې مرکز</span>
+          <h3 class="use-case__title" data-i18n="movement.uc.school.title">Education Is the Most Respected Investment in Afghanistan.</h3>
+          <p class="use-case__text" data-i18n="movement.uc.school.body">Parents researching schools for their children go online first. A website with your teachers' profiles, curriculum, and results wins enrollment before a single visit.</p>
+          <ul class="movement-checklist">
+            <li data-i18n="movement.uc.school.b1">Teacher profiles and qualifications build parental trust</li>
+            <li data-i18n="movement.uc.school.b2">List every course and program — students find you by subject</li>
+            <li data-i18n="movement.uc.school.b3">Attract NGO partnerships and scholarship program eligibility</li>
+            <li data-i18n="movement.uc.school.b4">Share alumni success stories — the most powerful proof</li>
+            <li data-i18n="movement.uc.school.b5">Document your results: pass rates, placements, achievements</li>
+          </ul>
+        </div>
+      </article>
+      <p class="movement-usecases__photo-disclaimer" data-i18n="movement.uc.photoDisclaimer" role="note">Photos are illustrative only and do not show specific Peshraft customers. The supermarket image is credited on the photo (Unsplash); other images are supplied for this page.</p>
+      </div>
+    </section>
+
+    <section class="movement-promise" id="promise" aria-labelledby="promise-heading">
+      <div class="movement-promise__header">
+        <h2 id="promise-heading" class="movement-promise__title movement-display" data-i18n="movement.promise.title">Your Dream Website. Our Promise.</h2>
+      </div>
+      <div class="movement-promise__grid">
+        <article class="movement-pillar" data-movement-reveal>
+          <div class="movement-pillar__icon" aria-hidden="true">🔒</div>
+          <h3 class="movement-pillar__title" data-i18n="movement.promise.secureTitle">Secure</h3>
+          <p class="movement-pillar__text" data-i18n="movement.promise.secureBody">Your website is protected 24 hours a day, 7 days a week. Your data. Your customers. Always safe.</p>
+        </article>
+        <article class="movement-pillar" data-movement-reveal>
+          <div class="movement-pillar__icon" aria-hidden="true">⚡</div>
+          <h3 class="movement-pillar__title" data-i18n="movement.promise.fastTitle">Fast</h3>
+          <p class="movement-pillar__text" data-i18n="movement.promise.fastBody">Lightning fast loading. On any device. Even on slow Afghan internet connections.</p>
+        </article>
+        <article class="movement-pillar" data-movement-reveal>
+          <div class="movement-pillar__icon" aria-hidden="true">💪</div>
+          <h3 class="movement-pillar__title" data-i18n="movement.promise.strongTitle">Strong</h3>
+          <p class="movement-pillar__text" data-i18n="movement.promise.strongBody">Built on world-class servers. Never goes down. Always there for your customers.</p>
+        </article>
+        <article class="movement-pillar" data-movement-reveal>
+          <div class="movement-pillar__icon" aria-hidden="true">🤝</div>
+          <h3 class="movement-pillar__title" data-i18n="movement.promise.afghanTitle">Afghan-owned</h3>
+          <p class="movement-pillar__text" data-i18n="movement.promise.afghanBody">We are Afghan. We speak your language. We understand your business. We are here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="movement-vision" id="vision" aria-labelledby="vision-heading">
+      <div class="movement-vision__bg" aria-hidden="true"></div>
+      <img
+        class="movement-vision__photo"
+        src="img/movement/digital-globe.webp"
+        alt=""
+        width="1600"
+        height="900"
+        loading="lazy"
+        decoding="async"
+        onerror="this.classList.add('is-hidden')"
+      >
+      <div class="movement-vision__inner">
+        <h2 id="vision-heading" class="movement-vision__title movement-display" data-i18n="movement.vision.title">Every Business That Goes Online Makes Afghanistan Stronger.</h2>
+        <div class="movement-vision__body">
+          <p data-i18n="movement.vision.body1">When the world searches for Afghan products, services, and businesses — they need to find YOU. Not silence. Not nothing. YOU.</p>
+          <p data-i18n="movement.vision.body2">This is bigger than a website. This is Afghanistan's digital future.</p>
+          <p data-i18n="movement.vision.body3">And it starts with one decision — yours.</p>
+        </div>
+        <div class="movement-counters" role="list">
+          <div class="js-movement-counter" data-target="247" data-suffix="+" role="listitem">
+            <span class="movement-counter__value">0</span>
+            <span class="movement-counter__label" data-i18n="movement.vision.c1Label">Businesses already online</span>
+          </div>
+          <div class="js-movement-counter" data-target="12" data-suffix="" role="listitem">
+            <span class="movement-counter__value">0</span>
+            <span class="movement-counter__label" data-i18n="movement.vision.c2Label">Provinces covered</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="movement-final-cta" id="movement-cta" aria-labelledby="movement-cta-heading">
+      <div class="movement-final-cta__bg" aria-hidden="true"></div>
+      <img
+        class="movement-final-cta__photo"
+        src="img/movement/woman-entrepreneur.webp"
+        alt=""
+        width="1600"
+        height="900"
+        loading="lazy"
+        decoding="async"
+        onerror="this.classList.add('is-hidden')"
+      >
+      <div class="movement-final-cta__inner">
+        <h2 id="movement-cta-heading" class="movement-final-cta__title movement-display" data-i18n="movement.final.title">Your Business Is Ready. Are You?</h2>
+        <div class="movement-final-cta__actions">
+          <a class="btn--final-dark" href="#contact" data-i18n="movement.final.ctaPrimary">Build My Website Now</a>
+          <a class="btn--final-outline" data-whatsapp-chat href="https://wa.me/93700012400" target="_blank" rel="noopener noreferrer" data-i18n="movement.final.ctaSecondary">Talk to Us on WhatsApp</a>
+        </div>
+        <p class="movement-final-cta__contact">
+          <a href="https://peshraft.tech">peshraft.tech</a>
+          <span aria-hidden="true"> · </span>
+          <a href="mailto:contact@peshraft.tech">contact@peshraft.tech</a>
+          <span aria-hidden="true"> · </span>
+          <a href="tel:+93700012400" data-i18n="contact.phoneDisplay">+93 70 001 2400</a>
+        </p>
       </div>
     </section>
 
@@ -298,154 +492,6 @@
             data-i18n-aria-label="portfolio.ao.linkAria"
           >Visit afgou.org</a>
         </article>
-      </div>
-    </section>
-
-    <section class="section" id="testimonials" aria-labelledby="testimonials-heading">
-      <div class="container">
-        <header class="section__header reveal" data-reveal>
-          <h2 id="testimonials-heading" class="section__title" data-i18n="testimonials.title">Client feedback</h2>
-          <p class="section__intro" data-i18n="testimonials.intro">
-            Sample quotes illustrating the outcomes and partnership style we bring to client work.
-          </p>
-        </header>
-        <div class="testimonials">
-          <figure class="testimonial reveal" data-reveal>
-            <blockquote class="testimonial__quote" data-i18n="testimonials.1.quote">
-              They nailed requirements early, hit the agreed timeline, and our site has stayed fast and stable on their hosting since launch.
-            </blockquote>
-            <p class="testimonial__rating" role="img" data-i18n-aria-label="testimonials.rating5" aria-label="5 out of 5 stars">
-              <span class="testimonial__star-row" aria-hidden="true">
-                <span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span>
-              </span>
-            </p>
-            <figcaption class="testimonial__cite">
-              <span class="testimonial__name" data-i18n="testimonials.1.name">Samira H.</span>
-              <span class="testimonial__role" data-i18n="testimonials.1.role">Program director, nonprofit sector</span>
-            </figcaption>
-          </figure>
-          <figure class="testimonial reveal" data-reveal>
-            <blockquote class="testimonial__quote" data-i18n="testimonials.2.quote">
-              Clear communication, a tidy technical handoff, and measurable performance gains — enterprise discipline without the bloat.
-            </blockquote>
-            <p class="testimonial__rating" role="img" data-i18n-aria-label="testimonials.rating5" aria-label="5 out of 5 stars">
-              <span class="testimonial__star-row" aria-hidden="true">
-                <span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span>
-              </span>
-            </p>
-            <figcaption class="testimonial__cite">
-              <span class="testimonial__name" data-i18n="testimonials.2.name">James C.</span>
-              <span class="testimonial__role" data-i18n="testimonials.2.role">Head of IT, professional services firm</span>
-            </figcaption>
-          </figure>
-          <figure class="testimonial reveal" data-reveal>
-            <blockquote class="testimonial__quote" data-i18n="testimonials.3.quote">
-              From staging to go-live everything was transparent. They treat infrastructure as a product, not an afterthought.
-            </blockquote>
-            <p class="testimonial__rating" role="img" data-i18n-aria-label="testimonials.rating4" aria-label="4 out of 5 stars">
-              <span class="testimonial__star-row" aria-hidden="true">
-                <span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star"></span><span class="testimonial__star testimonial__star--empty"></span>
-              </span>
-            </p>
-            <figcaption class="testimonial__cite">
-              <span class="testimonial__name" data-i18n="testimonials.3.name">Elena V.</span>
-              <span class="testimonial__role" data-i18n="testimonials.3.role">Operations lead, education platform</span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--pricing" id="pricing" aria-labelledby="pricing-heading">
-      <div class="container">
-        <header class="section__header reveal" data-reveal>
-          <h2 id="pricing-heading" class="section__title" data-i18n="pricing.title">Plans &amp; pricing</h2>
-          <p class="section__intro" data-i18n="pricing.intro">
-            Transparent packages for static and marketing sites. The first ten static builds are on us — you only cover the domain.
-          </p>
-        </header>
-
-        <div class="pricing-promo reveal" data-reveal>
-          <span class="pricing-promo__badge" data-i18n="pricing.promo.badge">Limited offer</span>
-          <h3 class="pricing-promo__title" data-i18n="pricing.promo.title">10 websites — completely free</h3>
-          <p class="price-card__price-label price-card__price-label--promo" data-i18n="pricing.promo.priceLabel">Limited launch</p>
-          <p class="price-card__price pricing-promo__price-row">
-            <span data-i18n="pricing.promo.price">$0</span>
-            <span class="pricing-promo__domain-note" data-i18n="pricing.promo.domainNote">Domain not included</span>
-          </p>
-          <p class="price-card__hosting" data-i18n="pricing.promo.renewal">$9.99/mo after one year</p>
-          <p class="pricing-promo__lead" data-i18n="pricing.promo.lead">
-            We’re giving away the first 10 sites at no charge: design, build, first year of hosting on our stack, SSL, and a contact form. You register and pay for your domain separately.
-          </p>
-          <p class="pricing-promo__spots" data-i18n="pricing.promo.spots">10 spots total</p>
-          <ul class="pricing-promo__list">
-            <li data-i18n="pricing.promo.li1">Website — up to 5 pages</li>
-            <li data-i18n="pricing.promo.li2">Mobile-responsive layout</li>
-            <li data-i18n="pricing.promo.li4">SSL certificate included</li>
-            <li data-i18n="pricing.promo.li5">Contact form integration</li>
-            <li data-i18n="pricing.promo.li6">2 revision rounds · 7–10 business-day delivery</li>
-          </ul>
-          <p class="pricing-promo__claim" data-i18n="pricing.promo.claim">Email contact@peshraft.tech with subject “Free website” to claim a spot.</p>
-          <a class="btn btn--primary" href="#contact" data-i18n="pricing.cta">Request this plan</a>
-        </div>
-
-        <div class="pricing-grid">
-          <article class="price-card reveal" data-reveal>
-            <h3 class="price-card__name" data-i18n="pricing.starter.name">Starter</h3>
-            <p class="price-card__tag" data-i18n="pricing.starter.tag">Personal sites &amp; small businesses</p>
-            <p class="price-card__price-label" data-i18n="pricing.oneTime">One-time build</p>
-            <p class="price-card__price"><span data-i18n="pricing.starter.price">from $99</span></p>
-            <p class="price-card__hosting" data-i18n="pricing.starter.hosting">Hosting/month — from $4.99</p>
-            <ul class="price-card__features">
-              <li data-i18n="pricing.starter.f2">Mobile-responsive layout</li>
-              <li data-i18n="pricing.starter.f3">Contact form integration</li>
-              <li data-i18n="pricing.starter.f4">Template-based custom design</li>
-              <li data-i18n="pricing.starter.f6">SSL certificate included</li>
-              <li data-i18n="pricing.starter.f7">1 free domain (1st year)</li>
-              <li data-i18n="pricing.starter.f8">Email support — 48h response</li>
-              <li data-i18n="pricing.starter.f9">2 revision rounds · 7–10 day delivery</li>
-            </ul>
-            <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
-          </article>
-
-          <article class="price-card price-card--featured reveal" data-reveal>
-            <span class="price-card__ribbon" data-i18n="pricing.business.popular">Best value</span>
-            <h3 class="price-card__name" data-i18n="pricing.business.name">Business</h3>
-            <p class="price-card__tag" data-i18n="pricing.business.tag">Growing businesses &amp; service brands</p>
-            <p class="price-card__price-label" data-i18n="pricing.oneTime">One-time build</p>
-            <p class="price-card__price"><span data-i18n="pricing.business.price">from $299</span></p>
-            <p class="price-card__hosting" data-i18n="pricing.business.hosting">from $9.99/mo hosting</p>
-            <ul class="price-card__features">
-              <li data-i18n="pricing.business.f1">With a database.</li>
-              <li data-i18n="pricing.business.f2">Mobile-responsive layout</li>
-              <li data-i18n="pricing.business.f3">Contact form integration</li>
-              <li data-i18n="pricing.business.f5">Custom design from scratch</li>
-              <li data-i18n="pricing.business.f6">Fully responsive · cross-browser</li>
-              <li data-i18n="pricing.business.f8">SSL certificate included</li>
-              <li data-i18n="pricing.business.f9">1 free domain + 1 subdomain</li>
-              <li data-i18n="pricing.business.f10">Basic on-page SEO setup</li>
-              <li data-i18n="pricing.business.f11">Chat &amp; email support — 24h</li>
-              <li data-i18n="pricing.business.f12">4 revision rounds</li>
-            </ul>
-            <a class="btn btn--primary btn--full" href="#contact" data-i18n="pricing.cta">Request this plan</a>
-          </article>
-
-          <article class="price-card price-card--enterprise reveal" data-reveal>
-            <h3 class="price-card__name" data-i18n="pricing.enterprise.name">Enterprise</h3>
-            <p class="price-card__tag" data-i18n="pricing.enterprise.tag">Large programmes, regulated teams, and complex roadmaps</p>
-            <p class="price-card__price-label" data-i18n="pricing.enterprise.priceLabel">Custom engagement</p>
-            <p class="price-card__price price-card__price--inquiry"><span data-i18n="pricing.enterprise.price">Upon request</span></p>
-            <p class="price-card__hosting" data-i18n="pricing.enterprise.hosting">Build, hosting, SLAs &amp; support tailored to your needs</p>
-            <ul class="price-card__features">
-              <li data-i18n="pricing.enterprise.f1">Business-grade baseline — extended to your roadmap</li>
-              <li data-i18n="pricing.enterprise.f2">Multi-site, multi-brand, or phased rollouts</li>
-              <li data-i18n="pricing.enterprise.f3">Custom integrations, APIs, and data workflows</li>
-              <li data-i18n="pricing.enterprise.f6">Named contacts &amp; clear escalation paths</li>
-              <li data-i18n="pricing.enterprise.f8">Compliance-aware delivery aligned to your requirements</li>
-            </ul>
-            <a class="btn btn--ghost btn--full" href="#contact" data-i18n="pricing.enterprise.cta">Request a proposal</a>
-          </article>
-        </div>
       </div>
     </section>
 
@@ -586,8 +632,7 @@
           <div class="form__row">
             <label class="form__label" for="service" data-i18n="contact.formInterest">Interest</label>
             <select class="form__input form__select" id="service" name="service">
-              <option value="free-static" data-i18n="contact.optFree">Free website (10 spots)</option>
-              <option value="development" data-i18n="contact.optDev">Website development</option>
+              <option value="development" selected data-i18n="contact.optDev">Website development</option>
               <option value="hosting" data-i18n="contact.optHost">Hosting &amp; care</option>
               <option value="both" data-i18n="contact.optBoth">Both</option>
               <option value="enterprise" data-i18n="contact.optEnterprise">Enterprise</option>
@@ -607,19 +652,61 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="logo__mark logo__mark--sm">P</span>
-        <span data-i18n="footer.brand">Peshraft Technologies</span>
+  <footer class="footer footer--movement">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span class="logo__mark logo__mark--sm">P</span>
+            <span data-i18n="footer.brand">Peshraft Technologies</span>
+          </div>
+          <p class="footer__movement-name" data-i18n="movement.footer.movementName">The Digital Silk Road</p>
+          <p class="footer__tagline" data-i18n="movement.footer.movementTag">The Silk Road ran through us. The digital road will too.</p>
+          <p class="footer__badge" data-i18n="movement.footer.badge">Proud member of The Digital Silk Road — powered by Peshraft Technologies</p>
+        </div>
+        <div>
+          <h3 class="footer__col-title" data-i18n="movement.footer.linksTitle">Quick links</h3>
+          <ul class="footer__links">
+            <li><a href="#top" data-i18n="movement.footer.linkHome">Home</a></li>
+            <li><a href="#services" data-i18n="movement.footer.linkServices">Services</a></li>
+            <li><a href="#use-cases" data-i18n="movement.footer.linkUseCases">Use cases</a></li>
+            <li><a href="#about" data-i18n="movement.footer.linkAbout">About</a></li>
+            <li><a href="#contact" data-i18n="movement.footer.linkContact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title" data-i18n="movement.footer.connectTitle">Connect</h3>
+          <ul class="footer__social">
+            <li><a href="#" data-i18n="movement.footer.socialFacebook">Facebook</a></li>
+            <li><a href="#" data-i18n="movement.footer.socialTiktok">TikTok</a></li>
+            <li><a href="#" data-i18n="movement.footer.socialInstagram">Instagram</a></li>
+            <li><a data-whatsapp-chat href="https://wa.me/93700012400" target="_blank" rel="noopener noreferrer" data-i18n="movement.footer.socialWhatsapp">WhatsApp</a></li>
+            <li><a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" data-i18n="movement.footer.socialGbp">Google Business</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer__copy">&copy; <span id="year"></span> <span data-i18n="footer.brand">Peshraft Technologies</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
-      <a class="footer__top" href="#top" data-i18n="footer.top">Back to top</a>
+      <div class="footer__bottom">
+        <p class="footer__copy"><span data-i18n="movement.footer.copy">© 2026 Peshraft Technologies. Built in Afghanistan. For Afghanistan.</span></p>
+        <a class="footer__top" href="#top" data-i18n="footer.top">Back to top</a>
+      </div>
     </div>
   </footer>
 
+  <a
+    id="whatsapp-float"
+    class="whatsapp-float"
+    data-whatsapp-chat
+    href="https://wa.me/93700012400"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-i18n-aria-label="movement.whatsapp.aria"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
   <script src="https://web3forms.com/client/script.js" defer></script>
   <script src="js/i18n.js" defer></script>
+  <script src="js/movement.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
