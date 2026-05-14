@@ -107,9 +107,10 @@
 }
 
 .movement-hero__title-line--kabul {
-  margin-top: 0.45rem;
-  font-size: clamp(1.5rem, 4.2vw, 2.45rem);
+  margin-top: 0;
+  font-size: clamp(1.75rem, 5vw, 3.25rem);
   letter-spacing: 0.03em;
+  color: var(--mv-gold);
   text-shadow: 0 4px 28px rgba(245, 166, 35, 0.28);
 }
 
