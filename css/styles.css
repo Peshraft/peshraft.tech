@@ -1238,6 +1238,10 @@ button:focus-visible {
   color: var(--text);
 }
 
+.pricing-promo .btn {
+  margin-top: 0.25rem;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
